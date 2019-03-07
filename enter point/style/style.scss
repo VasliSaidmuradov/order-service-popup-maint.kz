@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Evolventa;
+  src: local("Evolventa"), url("/fonts/evolventa/Evolventa-Regular.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: local("Evolventa Oblique"), url("/fonts/evolventa/Evolventa-Oblique.woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: local("Evolventa Bold"), url("/fonts/evolventa/Evolventa-Bold.woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: local("Evolventa Bold Oblique"), url("/fonts/evolventa/Evolventa-BoldOblique.woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.order-service {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Evolventa";
+  background-color: #0d0f11;
+  z-index: -2;
+
+
+  .order-service__image {
+    // float: left;
+
+    img {
+      width: 108px;
+      height: 158px;
+    }
+  }
+
+  .order-service__text {
+    margin: 0 25px 0 35px;
+
+    h2 {
+      font-size: 16px;
+      color: #65b3fd;
+      font-family: "Evolventa";
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 12px 0 6px;
+      margin-left: -2px;
+    }
+
+    p {
+      width: 282px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 16px;
+      color: #ffffff;
+      font-family: "Evolventa";
+    }
+  }
+
+  .order-service__button {
+    position: relative;
+
+    a {
+      display: inline-block;
+      width: 241px;
+      height: 56px;
+      line-height: 56px;
+      border-radius: 10px;
+      background-color: #0e1012;
+      border: 1px solid #3eb5f1;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #65b3fd;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -70px;
+      right: -60px;
+      width: 141px;
+      height: 141px;
+      background: url("../img/flash.svg") no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .order-service__line {
+    position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    height: 3px;
+    width: 1280px;
+    // border-top: 3px solid #18d5ff;
+    // border-bottom: 3px solid #18d5ff;
+    z-index: -1;
+    background-image: linear-gradient(90deg, #0d0f11 15%, #a3d1ff 53%, #0d0f11 86%);
+
+    &_top {
+      top: 54px;
+    }
+
+    &_bottom {
+      bottom: 49px;
+    }
+  }
+}
