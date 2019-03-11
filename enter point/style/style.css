@@ -97,7 +97,7 @@
   height: 3px;
   width: 1280px;
   z-index: -1;
-  background-image: linear-gradient(90deg, #0d0f11 15%, #a3d1ff 53%, #0d0f11 86%);
+  background-image: linear-gradient(90deg, #0d0f11 15%, #a3d1ff 50%, #0d0f11 85%);
 }
 .order-service .order-service__line_top {
   top: 54px;

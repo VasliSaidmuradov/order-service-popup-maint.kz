@@ -47,7 +47,6 @@
 
 
   .order-service__image {
-    // float: left;
 
     img {
       width: 108px;
@@ -110,14 +109,10 @@
 
   .order-service__line {
     position: absolute;
-    // top: 50%;
-    // transform: translateY(-50%);
     height: 3px;
     width: 1280px;
-    // border-top: 3px solid #18d5ff;
-    // border-bottom: 3px solid #18d5ff;
     z-index: -1;
-    background-image: linear-gradient(90deg, #0d0f11 15%, #a3d1ff 53%, #0d0f11 86%);
+    background-image: linear-gradient(90deg, #0d0f11 15%, #a3d1ff 50%, #0d0f11 85%);
 
     &_top {
       top: 54px;
