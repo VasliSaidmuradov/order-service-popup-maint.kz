@@ -1,24 +1,24 @@
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa"), url("/fonts/evolventa/Evolventa-Regular.woff");
+  src: local("Evolventa"), url("../fonts/evolventa/Evolventa-Regular.woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Oblique"), url("/fonts/evolventa/Evolventa-Oblique.woff");
+  src: local("Evolventa Oblique"), url("../fonts/evolventa/Evolventa-Oblique.woff");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Bold"), url("/fonts/evolventa/Evolventa-Bold.woff");
+  src: local("Evolventa Bold"), url("../fonts/evolventa/Evolventa-Bold.woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Bold Oblique"), url("/fonts/evolventa/Evolventa-BoldOblique.woff");
+  src: local("Evolventa Bold Oblique"), url("../fonts/evolventa/Evolventa-BoldOblique.woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -32,7 +32,9 @@
 
 .container {
   width: 1302px;
-  height: 700px;
+  height: 651px;
+  background: url(../img/bg2.svg) no-repeat center/cover;
+  font-family: "Evolventa";
 }
 
 .box {
@@ -45,7 +47,7 @@
   top: 7%;
   left: 2.2%;
   padding: 0 5px;
-  background-color: #888;
+  background-color: red;
   font-size: 0.7rem;
 }
 .box .btn_wrap .btn {
@@ -83,7 +85,90 @@
 
 .main {
   position: relative;
-  background-color: green;
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+}
+.main .wellcome_box {
+  position: absolute;
+  width: 37%;
+  height: 61%;
+  top: 13%;
+  left: 11.5%;
+}
+.main .wellcome_box .wellcome_img {
+  position: relative;
+  width: 38.5%;
+  height: 82%;
+  float: left;
+  margin: 6% 0 0 4.5%;
+  z-index: 100;
+}
+.main .wellcome_box .wellcome_img img {
+  width: 100%;
+  height: auto;
+}
+.main .wellcome_box .wellcome_text {
+  position: relative;
+  width: 45%;
+  height: 60%;
+  margin: 6% 0 0 47%;
+  z-index: 100;
+}
+.main .wellcome_box .wellcome_text h1 {
+  font-size: 118%;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 14% 0 0 0;
+  line-height: 1.4;
+  color: #55a7ff;
+}
+.main .wellcome_box .wellcome_text h1 span {
+  color: #55a7ff;
+  font-size: 123%;
+}
+.main .wellcome_box .wellcome_text p {
+  width: 85%;
+  font-size: 100%;
+  color: #ffffff;
+  padding: 11% 0 0 0;
+  line-height: 1.15;
+}
+.main .wellcome_box .wellcome_frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .wellcome_box .wellcome_frame img {
+  width: 100%;
+}
+.main .wellcome_box .wellcome_frame .btn_wrap {
+  position: absolute;
+  width: 50%;
+  height: 22%;
+  top: 76%;
+  left: 47%;
+  border-radius: 0.5rem;
+  background-color: rgba(7, 26, 31, 0.7);
+  text-align: center;
+}
+.main .wellcome_box .wellcome_frame .btn_wrap a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 130%;
+  margin-top: 7%;
+  margin-left: -6%;
+  padding: 3.5% 15%;
+  border-radius: 0.2rem;
+  background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
+  border: 0.5px solid rgba(85, 167, 255, 0.8);
+}
+.main .wellcome_box .svg_cont {
+  position: absolute;
+  top: 0;
+  left: 110%;
 }
 
 .footer {

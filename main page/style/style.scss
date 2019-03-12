@@ -1,27 +1,27 @@
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa"), url("/fonts/evolventa/Evolventa-Regular.woff");
+  src: local("Evolventa"), url("../fonts/evolventa/Evolventa-Regular.woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Oblique"), url("/fonts/evolventa/Evolventa-Oblique.woff");
+  src: local("Evolventa Oblique"), url("../fonts/evolventa/Evolventa-Oblique.woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Bold"), url("/fonts/evolventa/Evolventa-Bold.woff");
+  src: local("Evolventa Bold"), url("../fonts/evolventa/Evolventa-Bold.woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Bold Oblique"), url("/fonts/evolventa/Evolventa-BoldOblique.woff");
+  src: local("Evolventa Bold Oblique"), url("../fonts/evolventa/Evolventa-BoldOblique.woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -36,7 +36,10 @@
 
 .container {
   width: 1302px;
-  height: 700px;
+  height: 651px;
+  // background-color: rgb(44, 44, 44);
+  background: url(../img/bg2.svg) no-repeat center/cover;
+  font-family: "Evolventa";
 }
 
 .box {
@@ -49,7 +52,7 @@
     top: 7%;
     left: 2.2%;
     padding: 0 5px;
-    background-color: #888;
+    background-color: red;
     font-size: .7rem;
 
     .btn {
@@ -62,7 +65,9 @@
   }
 }
 
+// Header
 .header {
+  // display: none;
   position: relative;
   height: 15%;
   padding-top: 1.2%;
@@ -92,11 +97,135 @@
 
 }
 
+
+// Main
 .main {
-  // width: 100%;
   position: relative;
-  background-color: green;
+  // background-color: #007f0077;
+  width: 100%;
+  height: 85%;
+  overflow: hidden;
+
+  .wellcome_box {
+    position: absolute;
+    width: 37%;
+    height: 61%;
+    top: 13%;
+    left: 11.5%;
+    // background-color: #aaa;
+
+    .wellcome_img {
+      position: relative;
+      // background-color: rgba(127, 255, 212, 0.7);
+      width: 38.5%;
+      height: 82%;
+      float: left;
+      margin: 6% 0 0 4.5%;
+      z-index: 100;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .wellcome_text {
+      position: relative;
+      // background-color: rgba(127, 255, 212, 0.7);
+      width: 45%;
+      height: 60%;
+      margin: 6% 0 0 47%;
+      z-index: 100;
+
+      h1 {
+        font-size: 118%;
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 14% 0 0 0;
+        line-height: 1.4;
+        color: #55a7ff;
+
+        span {
+          color: #55a7ff;
+          font-size: 123%;
+        }
+      }
+
+      p {
+        width: 85%;
+        font-size: 100%;
+        color: #ffffff;
+        padding: 11% 0 0 0;
+        line-height: 1.15;
+      }
+    }
+
+    .wellcome_frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background-color: #868686bd;
+      // clip-path: polygon(6%0, 94%0, 97%3%, 97%10%, 100%13%, 100% 40%,
+      //   97%43%, 97%70%, 94%73%, 48%73%, 46%76%, 46%97%, 43%100%, 6%100%,
+      //   3%97%, 3%63%, 0 60%, 0 36%, 3%33%, 3%3%);
+
+      // &_inner {
+      //   background-color: #333333b4;
+      //   clip-path: polygon(7.5% 4%, 46%4%, 48.5%7%, 92% 7%, 94.5%10%, 94.5%67%,
+      //     92%69%, 46%69%, 43.5%73%, 43.5%93%, 41%95.5%, 8%95.5%, 5.5%93%,
+      //     5.5%6%);
+      // }
+
+      img {
+        width: 100%;
+      }
+
+      .btn_wrap {
+        position: absolute;
+        width: 50%;
+        height: 22%;
+        top: 76%;
+        left: 47%;
+        border-radius: .5rem;
+        background-color: rgba(7, 26, 31, 0.7);
+        text-align: center;
+
+        a {
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 130%;
+          margin-top: 7%;
+          margin-left: -6%;
+          padding: 3.5% 15%;
+          // background-color: #555;
+          // border: 1px solid #55a7ff;
+          border-radius: .2rem;
+          // box-shadow: 0px 1px 10px #55a7ffcc, 0px -1px 5px #55a7ffcc, -1px 0px 5px #55a7ffcc, 1px 0px 5px #55a7ffcc;
+          // box-shadow: inset 0px 1px 5px #55a7ff, inset 0px -1px 5px #55a7ff, inset -1px 0px 5px #55a7ff, inset 1px 0px 5px #55a7ff;
+          background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
+          border: .5px solid rgba(85, 167, 255, 0.8);
+        }
+
+      }
+    }
+
+    .svg_cont {
+      position: absolute;
+      top: 0;
+      left: 110%;
+
+      // img {
+      //   box-shadow: 0 0 3px rgba(137, 178, 221, 0.81);
+      //   background-image: linear-gradient(129deg, #0e1012 0%, #a3d0fe 42%, #0e1012 75%, #4f667c 93%);
+      // }
+    }
+  }
 }
+
+
+
 
 .footer {
   background-color: blue;
