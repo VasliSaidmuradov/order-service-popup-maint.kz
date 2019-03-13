@@ -34,11 +34,26 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 16px;
+}
+
+// font size 
+$font-size: 16px;
+
+
 .container {
   width: 1302px;
   height: 651px;
+
+  // width: 1000px;
+  // height: 500px;
+
+  // width: 2000px;
+  // height: 1000px;
+
   // background-color: rgb(44, 44, 44);
-  background: url(../img/bg2.svg) no-repeat center/cover;
+  background: url("/img/bg2.svg") no-repeat center/cover;
   font-family: "Evolventa";
 }
 
@@ -135,10 +150,14 @@
       width: 45%;
       height: 60%;
       margin: 6% 0 0 47%;
-      z-index: 100;
+      z-index: 1;
 
       h1 {
-        font-size: 118%;
+        // position: absolute;
+        width: 100%;
+        // font-size: 118%;
+        font-size: 1.18rem;
+        // font-size: $font-size * 100%;
         font-weight: normal;
         text-transform: uppercase;
         padding: 14% 0 0 0;
@@ -147,13 +166,15 @@
 
         span {
           color: #55a7ff;
-          font-size: 123%;
+          // font-size: 123%;
+          font-size: 1.23rem;
         }
       }
 
       p {
         width: 85%;
-        font-size: 100%;
+        // font-size: 100%;
+        font-size: 1rem;
         color: #ffffff;
         padding: 11% 0 0 0;
         line-height: 1.15;
@@ -202,7 +223,8 @@
         a {
           display: inline-block;
           text-transform: uppercase;
-          font-size: 130%;
+          // font-size: 130%;
+          font-size: .91rem;
           margin-top: 7%;
           margin-left: -6%;
           padding: 3.5% 15%;
@@ -247,10 +269,11 @@
         top: 23%;
         left: 34%;
         margin: 0;
-        // z-index: 100;
+        z-index: 1;
 
         h1 {
-          font-size: 140%;
+          // font-size: 140%;
+          font-size: 1.4rem;
           font-weight: normal;
           text-transform: uppercase;
           // padding: 14% 0 0 0;
@@ -261,14 +284,16 @@
 
         p {
           width: 85%;
-          font-size: 93%;
+          // font-size: 93%;
+          font-size: .93rem;
           color: #ffffff;
           padding: 1.5% 0 0 0;
           line-height: 1.1;
 
           span {
             color: #55a7ff;
-            font-size: 100%;
+            // font-size: 100%;
+            font-size: 1rem;
             text-transform: uppercase;
           }
         }
@@ -284,7 +309,6 @@
         height: 22%;
         top: 67%;
         left: 39.5%;
-        // border-radius: .5rem;
         background-color: rgba(7, 26, 31, 0);
         text-align: center;
         z-index: 10;
@@ -292,7 +316,8 @@
         a {
           display: inline-block;
           text-transform: uppercase;
-          font-size: 118%;
+          // font-size: 118%;
+          font-size: .91rem;
           // margin-top: 7%;
           // margin-left: -6%;
           padding: 3.5% 11%;
@@ -366,8 +391,8 @@
 }
 
 
-
-
-.footer {
-  background-color: blue;
-}
+// @media (max-width: 1200px) {
+//   html {
+//     font-size: 10px;
+//   }
+// }
