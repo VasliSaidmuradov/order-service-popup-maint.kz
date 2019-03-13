@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221 2" width="221" height="2">
+	<defs>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="69" y1="15" x2="288" y2="15">
+			<stop offset="0" stop-color="#0f191d"  />
+			<stop offset="1" stop-color="#ffffff"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="второе окно">
+		<path id="Фигура 1 копия" class="shp0" d="M220,2v-2h-219v2z" />
+	</g>
+</svg>
