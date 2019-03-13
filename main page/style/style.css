@@ -62,7 +62,6 @@
   position: relative;
   height: 15%;
   padding-top: 1.2%;
-  background-color: red;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%, 66% 40%, 0 40%);
 }
 .header hr {
@@ -142,7 +141,13 @@
   height: 100%;
 }
 .main .wellcome_box .wellcome_frame img {
+  position: absolute;
   width: 100%;
+}
+.main .wellcome_box .wellcome_frame .bg {
+  top: 4%;
+  left: 4%;
+  width: 91.5%;
 }
 .main .wellcome_box .wellcome_frame .btn_wrap {
   position: absolute;
@@ -165,10 +170,114 @@
   background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
   border: 0.5px solid rgba(85, 167, 255, 0.8);
 }
-.main .wellcome_box .svg_cont {
+.main .wellcome_box .congratulate_container {
+  position: absolute;
+  top: 2%;
+  left: 124%;
+  width: 100%;
+  height: 100%;
+}
+.main .wellcome_box .congratulate_container img {
+  position: absolute;
+  width: 90%;
+}
+.main .wellcome_box .congratulate_container .bg {
+  top: 3%;
+  left: 3.8%;
+  width: 82.5%;
+}
+.main .wellcome_box .congratulate_container .congratulate_text {
+  position: absolute;
+  width: 45%;
+  top: 23%;
+  left: 34%;
+  margin: 0;
+}
+.main .wellcome_box .congratulate_container .congratulate_text h1 {
+  font-size: 140%;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #55a7ff;
+}
+.main .wellcome_box .congratulate_container .congratulate_text p {
+  width: 85%;
+  font-size: 93%;
+  color: #ffffff;
+  padding: 1.5% 0 0 0;
+  line-height: 1.1;
+}
+.main .wellcome_box .congratulate_container .congratulate_text p span {
+  color: #55a7ff;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+.main .wellcome_box .congratulate_container .congratulate_text p:last-child {
+  padding-top: 10%;
+}
+.main .wellcome_box .congratulate_container .btn_wrap {
+  position: absolute;
+  width: 50%;
+  height: 22%;
+  top: 67%;
+  left: 39.5%;
+  background-color: rgba(7, 26, 31, 0);
+  text-align: center;
+  z-index: 10;
+}
+.main .wellcome_box .congratulate_container .btn_wrap a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 118%;
+  padding: 3.5% 11%;
+  border-radius: 0.2rem;
+  background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
+  border: 0.5px solid rgba(85, 167, 255, 0.8);
+  z-index: 10;
+}
+.main .wellcome_box .congratulate_container .svg_wrap {
   position: absolute;
   top: 0;
-  left: 110%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .wellcome_box .congratulate_container .svg_wrap .ellipse1 {
+  position: absolute;
+  top: 4%;
+  left: 5.5%;
+  width: 14%;
+  transform: rotateZ(90deg);
+}
+.main .wellcome_box .congratulate_container .svg_wrap .ellipse2 {
+  position: absolute;
+  top: 5.8%;
+  left: 7%;
+  width: 11%;
+}
+.main .wellcome_box .congratulate_container .svg_wrap .lightning {
+  position: absolute;
+  top: 8%;
+  left: 9.5%;
+  width: 6.5%;
+}
+.main .wellcome_box .congratulate_container .svg_wrap .eman {
+  position: absolute;
+  top: 33%;
+  left: 8%;
+  width: 21%;
+}
+.main .wellcome_box .congratulate_container .svg_wrap .line1 {
+  position: absolute;
+  top: 72%;
+  left: 5%;
+  width: 43%;
+}
+.main .wellcome_box .congratulate_container .svg_wrap .line2 {
+  position: absolute;
+  top: 14%;
+  left: 24%;
+  width: 61.4%;
+  height: 2%;
 }
 
 .footer {

@@ -71,7 +71,7 @@
   position: relative;
   height: 15%;
   padding-top: 1.2%;
-  background-color: red;
+  // background-color: red;
   clip-path: polygon(0 0, 100%0, 100%100%, 70%100%, 66%40%, 0 40%);
 
   hr {
@@ -179,7 +179,14 @@
       // }
 
       img {
+        position: absolute;
         width: 100%;
+      }
+
+      .bg {
+        top: 4%;
+        left: 4%;
+        width: 91.5%;
       }
 
       .btn_wrap {
@@ -207,19 +214,153 @@
           background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
           border: .5px solid rgba(85, 167, 255, 0.8);
         }
-
       }
     }
 
-    .svg_cont {
+    .congratulate_container {
       position: absolute;
-      top: 0;
-      left: 110%;
+      top: 2%;
+      left: 124%;
+      width: 100%;
+      height: 100%;
 
-      // img {
-      //   box-shadow: 0 0 3px rgba(137, 178, 221, 0.81);
-      //   background-image: linear-gradient(129deg, #0e1012 0%, #a3d0fe 42%, #0e1012 75%, #4f667c 93%);
-      // }
+      // background: url("../img/congratulate-window/bg.svg") no-repeat cover;
+
+      img {
+        position: absolute;
+        width: 90%;
+        // height: 80%;
+      }
+
+      .bg {
+        top: 3%;
+        left: 3.8%;
+        width: 82.5%;
+
+      }
+
+      .congratulate_text {
+        position: absolute;
+        // background-color: rgba(127, 255, 212, 0.7);
+        width: 45%;
+        // height: 60%;
+        top: 23%;
+        left: 34%;
+        margin: 0;
+        // z-index: 100;
+
+        h1 {
+          font-size: 140%;
+          font-weight: normal;
+          text-transform: uppercase;
+          // padding: 14% 0 0 0;
+          // line-height: 1.4;
+          color: #55a7ff;
+
+        }
+
+        p {
+          width: 85%;
+          font-size: 93%;
+          color: #ffffff;
+          padding: 1.5% 0 0 0;
+          line-height: 1.1;
+
+          span {
+            color: #55a7ff;
+            font-size: 100%;
+            text-transform: uppercase;
+          }
+        }
+
+        & p:last-child {
+          padding-top: 10%;
+        }
+      }
+
+      .btn_wrap {
+        position: absolute;
+        width: 50%;
+        height: 22%;
+        top: 67%;
+        left: 39.5%;
+        // border-radius: .5rem;
+        background-color: rgba(7, 26, 31, 0);
+        text-align: center;
+        z-index: 10;
+
+        a {
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 118%;
+          // margin-top: 7%;
+          // margin-left: -6%;
+          padding: 3.5% 11%;
+          // background-color: #555;
+          // border: 1px solid #55a7ff;
+          border-radius: .2rem;
+          // box-shadow: 0px 1px 10px #55a7ffcc, 0px -1px 5px #55a7ffcc, -1px 0px 5px #55a7ffcc, 1px 0px 5px #55a7ffcc;
+          // box-shadow: inset 0px 1px 5px #55a7ff, inset 0px -1px 5px #55a7ff, inset -1px 0px 5px #55a7ff, inset 1px 0px 5px #55a7ff;
+          background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
+          border: .5px solid rgba(85, 167, 255, 0.8);
+          z-index: 10;
+        }
+      }
+
+      .svg_wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(255, 127, 80, 0.349);
+
+        .ellipse1 {
+          position: absolute;
+          top: 4%;
+          left: 5.5%;
+          width: 14%;
+          transform: rotateZ(90deg);
+        }
+
+        .ellipse2 {
+          position: absolute;
+          top: 5.8%;
+          left: 7%;
+          width: 11%;
+          // box-shadow: inset 0px 1px 5px #55a7ff, inset 0px -1px 5px #55a7ff, inset -1px 0px 5px #55a7ff, inset 1px 0px 5px #55a7ff;
+          // transform: rotateZ(90deg);
+        }
+
+        .lightning {
+          position: absolute;
+          top: 8%;
+          left: 9.5%;
+          width: 6.5%;
+        }
+
+        .eman {
+          position: absolute;
+          top: 33%;
+          left: 8%;
+          width: 21%;
+        }
+
+        .line1 {
+          position: absolute;
+          top: 72%;
+          left: 5%;
+          width: 43%;
+        }
+
+        .line2 {
+          position: absolute;
+          top: 14%;
+          left: 24%;
+          width: 61.4%;
+          height: 2%;
+        }
+      }
     }
   }
 }
