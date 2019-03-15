@@ -125,7 +125,7 @@ body {
       right: -60px;
       width: 141px;
       height: 141px;
-      background: url("../img/flash.svg") no-repeat;
+      background: url("../../global-assets/img/flash.svg") no-repeat;
       z-index: -1;
     }
   }
@@ -148,7 +148,7 @@ body {
 }
 
 
-// Modal
+// Modal window
 
 .container {
   display: none;
@@ -168,7 +168,7 @@ body {
   /* Enable scroll if needed */
 
   // background-color: rgb(44, 44, 44);
-  background: url("/img/bg2.svg") no-repeat center/cover;
+  background: url("../../global-assets/img/bg2.svg") no-repeat center/cover;
   font-family: "Evolventa";
 }
 

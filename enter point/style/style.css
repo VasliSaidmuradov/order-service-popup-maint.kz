@@ -110,7 +110,7 @@ body .bg_opacity {
   right: -60px;
   width: 141px;
   height: 141px;
-  background: url("../img/flash.svg") no-repeat;
+  background: url("../../global-assets/img/flash.svg") no-repeat;
   z-index: -1;
 }
 .order-service .order-service__line {
@@ -141,7 +141,7 @@ body .bg_opacity {
   top: 0;
   overflow: auto;
   /* Enable scroll if needed */
-  background: url("/img/bg2.svg") no-repeat center/cover;
+  background: url("../../global-assets/img/bg2.svg") no-repeat center/cover;
   font-family: "Evolventa";
 }
 
