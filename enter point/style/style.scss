@@ -365,12 +365,10 @@ body {
   .congratulate_box {
     position: absolute;
     top: 14%;
-
     left: 50%;
     transform: translateX(-50%);
-    width: 40%;
-    height: 40%;
-
+    width: 37%;
+    // height: 40%;
     // background: url("../img/congratulate-window/bg.svg") no-repeat cover;
 
     img {
@@ -380,10 +378,12 @@ body {
     }
 
     .bg {
-      top: 3%;
+      position: absolute;
+      // top: 100%;
       left: 3.8%;
       width: 82.5%;
-
+      padding-top: 2%;
+      // z-index: 100;
     }
 
     .congratulate_text {
@@ -391,9 +391,10 @@ body {
       // background-color: rgba(127, 255, 212, 0.7);
       width: 45%;
       // height: 60%;
-      top: 23%;
+      // top: 50%;
       left: 34%;
       margin: 0;
+      padding-top: 15.5%;
       z-index: 1;
 
       h1 {
@@ -412,7 +413,7 @@ body {
         // font-size: 93%;
         font-size: .93rem;
         color: #ffffff;
-        padding: 1.5% 0 0 0;
+        padding: 1% 0 0 0;
         line-height: 1.1;
 
         span {
@@ -424,7 +425,7 @@ body {
       }
 
       & p:last-child {
-        padding-top: 10%;
+        padding-top: 9%;
       }
     }
 
@@ -432,8 +433,9 @@ body {
       position: absolute;
       width: 50%;
       height: 22%;
-      top: 67%;
-      left: 39.5%;
+      // bottom: 5%;
+      margin-top: 46%;
+      left: 40%;
       background-color: rgba(7, 26, 31, 0);
       text-align: center;
       z-index: 10;
@@ -445,7 +447,7 @@ body {
         font-size: .91rem;
         // margin-top: 7%;
         // margin-left: -6%;
-        padding: 3.5% 11%;
+        padding: 3% 10%;
         // background-color: #555;
         // border: 1px solid #55a7ff;
         border-radius: .2rem;
@@ -467,7 +469,7 @@ body {
 
       .ellipse1 {
         position: absolute;
-        top: 4%;
+        margin-top: 3.5%;
         left: 5.5%;
         width: 14%;
         transform: rotateZ(90deg);
@@ -475,8 +477,8 @@ body {
 
       .ellipse2 {
         position: absolute;
-        top: 5.8%;
-        left: 7%;
+        margin-top: 4.7%;
+        left: 6.8%;
         width: 11%;
         // box-shadow: inset 0px 1px 5px #55a7ff, inset 0px -1px 5px #55a7ff, inset -1px 0px 5px #55a7ff, inset 1px 0px 5px #55a7ff;
         // transform: rotateZ(90deg);
@@ -484,31 +486,30 @@ body {
 
       .lightning {
         position: absolute;
-        top: 8%;
+        margin-top: 6%;
         left: 9.5%;
         width: 6.5%;
       }
 
       .eman {
         position: absolute;
-        top: 33%;
-        left: 8%;
+        margin-top: 23%;
+        left: 8.5%;
         width: 21%;
       }
 
       .line1 {
         position: absolute;
-        top: 72%;
+        margin-top: 50%;
         left: 5%;
         width: 43%;
       }
 
       .line2 {
         position: absolute;
-        top: 14%;
+        margin-top: 9%;
         left: 24%;
         width: 61.4%;
-        height: 2%;
       }
     }
   }
