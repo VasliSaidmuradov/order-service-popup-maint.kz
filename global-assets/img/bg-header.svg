@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1428 151" width="1401" height="148">
+	<defs>
+		<image width="1204" height="140" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLQAAACMCAMAAABS4wBCAAAAAXNSR0IB2cksfwAAARFQTFRFn8v3AAAAn8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3n8v3NYymBwAAAFt0Uk5T/wAMLVOS2k/OAWDoEK1f9iziFQ7HCcYR3yXvNfI691STG+xDfQId8Vuq4z2U5EQI2H4E1DH8ids3+3kDhdInarnuTooZ7UD9erPRGOAj6i7lFqVc9BqpuC+381Sb3h4AAAMOSURBVHic7dvXllRlFEZRBFEwIggqKipiRAXbnDArYsCc3v9BHF6p0F1dVc2otWs45zOs7+I/Y59DhwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6R2+B/4fCR24/eUc+NW6FOCTbozmP14Di4uiLYpON33V1PjoOqI4LNuufeenMcUJ0QbNp999er40DqgGDjTjxQz46DqPuBzTvpe/w2q/OBwKkH6+GxvroeKJw+Uy+PtdXxQOKhh+vpsa66HWg8crbeHmuq04HIo4/V42M9dTlQefxcvT7WUocDmSfq9bGWuhvoPFnPj3XU2UDI4cM2qquB0FPn6wGyuroaKD1dD5DV1dFA6kK9QFZWNwOpZ/yFuHXqZqD17HP1BllRnQzEnq83yIrqYqD2Qj1CVlMHA7VTL9YrZCV1MJC7WK+QldS9QO+leoasos4FeodfrnfICupcYIBX6h2ygroWmMADcYvUscAEly7XS2RpdSwwwol6iSytbgVmeLWeIsuqU4EZdl6rt8iS6lRgiNffqMfIcupSYIo36zGynDoUGOOteo0spe4Exni7XiNLqTuBOY7Wc2QZdSYwhxPTrVBnAoMceaceJPurK4FJ3q0Hyf7qSGCS95yYzldHAqM4MZ2vbgRmeb+eJPupE4FZdj6oN8k+6kRgmCvn6lGyWF0ITPNhPUoWqwOBcT6qV8lCdR8wzsmP61mySN0HzPNJPUsWqfOAgT6td8kCdR0w0M6Zepjsra4DJvrs83qZ7KmOA0b64st6muylbgNmulpPk73UacBMx7+qt8ke6jRgqNPX6nGyu7oMmOrrb+p1sqs6DBjr2+/qebKbuguY6/rZep/sos4CBrt+vh4oN6urgMmufF8vlJvUUcBoPxyrJ8qN6iZgtks/1hvlBnUSMN1PP9cr5T/qIGC8X36tZ8q/1T3AFrj4Wz1U/lHXAFvh96t/XP6zXit/+wuQXeLoIIGfXgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #0d191d } 
+		.shp1 { fill: #0e1012 } 
+		.shp2 { fill: none;stroke: #9ecbf8;stroke-width: 4.43 } 
+	</style>
+	<g id="bg-header">
+		<path id="1" class="shp0" d="M988,130h415v-90l-481.03,0.45c32.86,50.69 51.19,88.65 66.03,89.55z" />
+		<use id="2" href="#img1" transform="matrix(1,0,0,1,168,0)"/>
+		<path id="3" class="shp1" d="M0,74c0,0 504.86,0 914,0c23,0 45.71,68 68,68c247.79,0 445,0 445,0v-140h-1427z" />
+		<path id="4" class="shp2" d="M0,74c0,0 504.86,0 914,0c20.92,0 41.58,56.21 61.92,66.42c2.03,1.02 4.06,1.58 6.08,1.58c247.79,0 445,0 445,0v-140h-1427z" />
+	</g>
+</svg>
