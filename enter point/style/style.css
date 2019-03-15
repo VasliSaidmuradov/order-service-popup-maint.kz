@@ -196,7 +196,6 @@ body .bg_opacity {
   overflow: hidden;
 }
 .main .wellcome_box {
-  display: none;
   position: absolute;
   width: 37%;
   height: 61%;
@@ -281,6 +280,7 @@ body .bg_opacity {
   border: 0.5px solid rgba(85, 167, 255, 0.8);
 }
 .main .congratulate_box {
+  display: none;
   position: absolute;
   top: 14%;
   left: 50%;
@@ -340,7 +340,7 @@ body .bg_opacity {
   display: inline-block;
   text-transform: uppercase;
   font-size: 0.91rem;
-  padding: 4.2% 10% 2.8%;
+  padding: 3.2% 10% 2.8%;
   margin-top: 1%;
   border-radius: 0.2rem;
   background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
