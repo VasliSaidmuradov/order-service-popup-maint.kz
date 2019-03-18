@@ -744,6 +744,51 @@ body {
           display: none;
         }
       }
+
+      // Lines between steps
+      .line_0to5 {
+        position: absolute;
+        height: .5px;
+        background-color: #cccccc33;
+        transform-origin: top left; // or 0 0 
+        // border: 1.3px solid #cccccc1a;
+      }
+
+      .line_0to1 {
+        top: 20%;
+        left: 34%;
+        width: 18.5%;
+        transform: rotate(8deg);
+      }
+
+      .line_1to2 {
+        top: 26%;
+        left: 52.5%;
+        width: 21%;
+        transform: rotate(7.4deg);
+      }
+
+      .line_2to3 {
+        top: 32.6%;
+        left: 73.5%;
+        width: 15.9%;
+        transform: rotate(58deg);
+      }
+
+      .line_3to4 {
+        top: 62.2%;
+        left: 40%;
+        width: 42%;
+        transform: rotate(1.3deg);
+      }
+
+      .line_4to5 {
+        top: 63%;
+        left: 40%;
+        width: 24%;
+        transform: rotate(28deg);
+      }
+
     }
 
     // background-color: #ffffff3a;

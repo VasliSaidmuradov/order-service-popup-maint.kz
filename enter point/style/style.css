@@ -561,5 +561,41 @@ body .bg_opacity {
 .main .level .level_0 .point_5::after {
   display: none;
 }
+.main .level .level_0 .line_0to5 {
+  position: absolute;
+  height: 0.5px;
+  background-color: #cccccc33;
+  transform-origin: top left;
+}
+.main .level .level_0 .line_0to1 {
+  top: 20%;
+  left: 34%;
+  width: 18.5%;
+  transform: rotate(8deg);
+}
+.main .level .level_0 .line_1to2 {
+  top: 26%;
+  left: 52.5%;
+  width: 21%;
+  transform: rotate(7.4deg);
+}
+.main .level .level_0 .line_2to3 {
+  top: 32.6%;
+  left: 73.5%;
+  width: 15.9%;
+  transform: rotate(58deg);
+}
+.main .level .level_0 .line_3to4 {
+  top: 62.2%;
+  left: 40%;
+  width: 42%;
+  transform: rotate(1.3deg);
+}
+.main .level .level_0 .line_4to5 {
+  top: 63%;
+  left: 40%;
+  width: 24%;
+  transform: rotate(28deg);
+}
 
 /*# sourceMappingURL=style.css.map */
