@@ -1,27 +1,27 @@
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa"), url("../../global-assets/fonts/evolventa/Evolventa-Regular.woff");
+  src: local("Evolventa"), url("../global-assets/fonts/evolventa/Evolventa-Regular.woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Oblique"), url("../../global-assets/fonts/evolventa/Evolventa-Oblique.woff");
+  src: local("Evolventa Oblique"), url("../global-assets/fonts/evolventa/Evolventa-Oblique.woff");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Bold"), url("../../global-assets/fonts/evolventa/Evolventa-Bold.woff");
+  src: local("Evolventa Bold"), url("../global-assets/fonts/evolventa/Evolventa-Bold.woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: Evolventa;
-  src: local("Evolventa Bold Oblique"), url("../../global-assets/fonts/evolventa/Evolventa-BoldOblique.woff");
+  src: local("Evolventa Bold Oblique"), url("../global-assets/fonts/evolventa/Evolventa-BoldOblique.woff");
   font-weight: bold;
   font-style: italic;
 }
@@ -125,7 +125,7 @@ body {
       right: -60px;
       width: 141px;
       height: 141px;
-      background: url("../../global-assets/img/flash.svg") no-repeat;
+      background: url("../global-assets/img/flash.svg") no-repeat;
       z-index: -1;
     }
   }
@@ -167,7 +167,7 @@ body {
   /* Enable scroll if needed */
 
   // background-color: rgb(44, 44, 44);
-  background: url("../../global-assets/img/bg-main2.png") no-repeat center/cover;
+  background: url("../global-assets/img/bg-main2.png") no-repeat center/cover;
   font-family: "Evolventa";
 }
 
@@ -202,7 +202,7 @@ body {
   height: 15%;
   // padding-top: 1.2%;
   // background-color: red;
-  // background: url(../../global-assets/img/bg-header.svg) no-repeat bottom/cover;
+  // background: url(../global-assets/img/bg-header.svg) no-repeat bottom/cover;
   // clip-path: polygon(0 0, 100%0, 100%100%, 70%100%, 66%40%, 0 40%);
 
   hr {
@@ -226,7 +226,7 @@ body {
     top: 8.5%;
     right: 1.1%;
     // background-color: rgba($color: #aaa, $alpha: 0.5);
-    background: url(../../global-assets/img/header/header_menu.png) no-repeat top/cover;
+    background: url(../global-assets/img/header/header_menu.png) no-repeat top/cover;
     // clip-path: polygon(0 0, 100%0, 100%100%, 16%100%);
   }
 
@@ -536,7 +536,7 @@ body {
       left: 8%;
       width: 7rem;
       height: 7rem;
-      background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+      background: url(../global-assets/img/level-0/indicator.png) no-repeat center/cover;
     }
 
     .level_0 {
@@ -550,7 +550,7 @@ body {
         left: 2%;
         width: 22rem;
         height: 34rem;
-        background: url(../../global-assets/img/question/q_box.png) no-repeat center/cover;
+        background: url(../global-assets/img/question/q_box.png) no-repeat center/cover;
       }
 
       .level_0_compass_box {
@@ -559,8 +559,8 @@ body {
         right: 3%;
         width: 15rem;
         height: 15rem;
-        background: url(../../global-assets/img/level-0/compass.svg) no-repeat center/cover,
-          url(../../global-assets/img/level-0/compass/compass-0.png) no-repeat center;
+        background: url(../global-assets/img/level-0/compass.svg) no-repeat center/cover,
+          url(../global-assets/img/level-0/compass/compass-0.png) no-repeat center;
 
         &::after {
           content: "";
@@ -589,7 +589,7 @@ body {
         top: 0%;
         left: 0%;
         background-color: #55a7ff88;
-        background: url(../../global-assets/img/level-0/line.svg) no-repeat center;
+        background: url(../global-assets/img/level-0/line.svg) no-repeat center;
 
       }
 
@@ -606,7 +606,7 @@ body {
           left: 4%;
           width: 7.5em;
           height: 7.5rem;
-          background: url(../../global-assets/img/levels/level_active.png) no-repeat center;
+          background: url(../global-assets/img/levels/level_active.png) no-repeat center;
           // animation: indicator .8s linear infinite alternate;
         }
 
@@ -618,7 +618,7 @@ body {
           left: 0%;
           width: 8rem;
           height: 8rem;
-          background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+          background: url(../global-assets/img/level-0/indicator.png) no-repeat center/cover;
           animation: indicator .8s linear infinite alternate;
         }
 
@@ -647,6 +647,18 @@ body {
           }
         }
 
+        @keyframes robot {
+          0% {
+            opacity: .8;
+            // transform: scale(.95);
+          }
+
+          100% {
+            opacity: 1;
+
+          }
+        }
+
       }
 
       .step_animated {
@@ -656,9 +668,9 @@ body {
       .point_0 {
         top: 0;
         left: 29%;
-        background: url(../../global-assets/img/levels/level0.png) no-repeat center;
-
-        // background: url(../../global-assets/img/levels/level0.png) no-repeat center;
+        background: url(../global-assets/img/levels/level0.png) no-repeat center;
+        animation: robot .3s linear infinite alternate;
+        // background: url(../global-assets/img/levels/level0.png) no-repeat center;
 
         &::before {
           display: block;
@@ -673,7 +685,7 @@ body {
       .point_1 {
         top: 13%;
         left: 47.5%;
-        background: url(../../global-assets/img/levels/level1.png) no-repeat center;
+        background: url(../global-assets/img/levels/level1.png) no-repeat center;
 
         &::before {
           display: none;
@@ -688,7 +700,7 @@ body {
       .point_2 {
         top: 19%;
         left: 68.5%;
-        background: url(../../global-assets/img/levels/level2.png) no-repeat center;
+        background: url(../global-assets/img/levels/level2.png) no-repeat center;
 
         &::before {
           display: none;
@@ -703,7 +715,7 @@ body {
       .point_3 {
         top: 51%;
         left: 77%;
-        background: url(../../global-assets/img/levels/level3.png) no-repeat center;
+        background: url(../global-assets/img/levels/level3.png) no-repeat center;
 
         &::before {
           display: none;
@@ -718,7 +730,7 @@ body {
       .point_4 {
         top: 49%;
         left: 34.5%;
-        background: url(../../global-assets/img/levels/level4.png) no-repeat center;
+        background: url(../global-assets/img/levels/level4.png) no-repeat center;
 
         &::before {
           display: none;
@@ -733,7 +745,7 @@ body {
       .point_5 {
         bottom: 3.8%;
         left: 56%;
-        background: url(../../global-assets/img/levels/level5.png) no-repeat center;
+        background: url(../global-assets/img/levels/level5.png) no-repeat center;
 
         &::before {
           display: none;
