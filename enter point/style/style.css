@@ -443,17 +443,25 @@ body .bg_opacity {
   position: absolute;
   width: 10%;
   height: 15%;
-  background-color: rgba(255, 0, 0, 0.3);
 }
 .main .level .level_0 .step_point::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 8%;
-  width: 7rem;
-  height: 7rem;
+  left: 4%;
+  width: 7.5rem;
+  height: 7.5rem;
   background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+  animation: example 0.8s linear infinite alternate;
+}
+@keyframes example {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .main .level .level_0 .first_point {
   top: 8%;
@@ -461,7 +469,7 @@ body .bg_opacity {
   background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
 }
 .main .level .level_0 .first_point::before {
-  display: block;
+  display: none;
 }
 .main .level .level_0 .second_point {
   top: 15%;
