@@ -206,23 +206,28 @@ body {
   // clip-path: polygon(0 0, 100%0, 100%100%, 70%100%, 66%40%, 0 40%);
 
   hr {
-    margin: 0 0 .3% 0;
+    position: absolute;
+    // margin: .8% 0 .3% 0;
+    top: 16%;
+    left: 0;
     width: 64.5%;
-    border: .5px solid #666;
+    border: .5px solid #66666633;
   }
 
   .bottom {
+    top: 23%;
     width: 65%;
   }
 
   .step_box {
     position: absolute;
-    width: 34%;
-    height: 80%;
+    width: 33.5%;
+    height: 85%;
     top: 8.5%;
     right: 1.1%;
-    background-color: rgba($color: #aaa, $alpha: 0.5);
-    clip-path: polygon(0 0, 100%0, 100%100%, 16%100%);
+    // background-color: rgba($color: #aaa, $alpha: 0.5);
+    background: url(../../global-assets/img/header/header_menu.png) no-repeat top/cover;
+    // clip-path: polygon(0 0, 100%0, 100%100%, 16%100%);
   }
 
 
@@ -539,6 +544,15 @@ body {
       width: 100%;
       height: 100%;
 
+      .level_0_q_box {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        width: 22rem;
+        height: 34rem;
+        background: url(../../global-assets/img/question/q_box.png) no-repeat center/cover;
+      }
+
       .level_0_compass_box {
         position: absolute;
         top: 2.5%;
@@ -582,16 +596,28 @@ body {
       .step_point {
         position: absolute;
         width: 10%;
-        height: 15%;
+        height: 20%;
 
         &::before {
           content: "";
           position: absolute;
+          top: 30%;
+          // transform: translateY(-50%);
+          left: 4%;
+          width: 7.5em;
+          height: 7.5rem;
+          background: url(../../global-assets/img/levels/level_active.png) no-repeat center;
+          // animation: indicator .8s linear infinite alternate;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          left: 4%;
-          width: 7.5rem;
-          height: 7.5rem;
+          left: 0%;
+          width: 8rem;
+          height: 8rem;
           background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
           animation: indicator .8s linear infinite alternate;
         }
@@ -599,7 +625,8 @@ body {
         // Animation indicator
         @keyframes indicator {
           0% {
-            opacity: 0.4;
+            opacity: .1;
+            // transform: scale(0, 1);
           }
 
           100% {
@@ -608,10 +635,10 @@ body {
           }
         }
 
-        @keyframes step {
+        @keyframes step-- {
           0% {
-            opacity: 0.4;
-            transform: scale(.9);
+            opacity: .8;
+            transform: scale(.95);
           }
 
           100% {
@@ -626,63 +653,95 @@ body {
         animation: step .8s linear infinite alternate;
       }
 
-      .first_point {
-        top: 8%;
+      .point_0 {
+        top: 0;
         left: 29%;
-        background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+        background: url(../../global-assets/img/levels/level0.png) no-repeat center;
+
+        // background: url(../../global-assets/img/levels/level0.png) no-repeat center;
 
         &::before {
+          display: block;
+          top: 50%;
+        }
+
+        &::after {
           display: none;
         }
       }
 
-      .second_point {
-        top: 15%;
-        left: 48%;
-        background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+      .point_1 {
+        top: 13%;
+        left: 47.5%;
+        background: url(../../global-assets/img/levels/level1.png) no-repeat center;
 
         &::before {
+          display: none;
+          // top: 50%;
+        }
+
+        &::after {
           display: block;
         }
       }
 
-      .third_point {
-        top: 21.5%;
-        left: 69%;
-        background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+      .point_2 {
+        top: 19%;
+        left: 68.5%;
+        background: url(../../global-assets/img/levels/level2.png) no-repeat center;
 
         &::before {
-          display: block;
+          display: none;
+          // top: 50%;
+        }
+
+        &::after {
+          display: none;
         }
       }
 
-      .fourth_point {
-        top: 54%;
+      .point_3 {
+        top: 51%;
         left: 77%;
-        background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+        background: url(../../global-assets/img/levels/level3.png) no-repeat center;
 
         &::before {
-          display: block;
+          display: none;
+          // top: 50%;
+        }
+
+        &::after {
+          display: none;
         }
       }
 
-      .fifth_point {
-        top: 54%;
-        left: 34%;
-        background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+      .point_4 {
+        top: 49%;
+        left: 34.5%;
+        background: url(../../global-assets/img/levels/level4.png) no-repeat center;
 
         &::before {
-          display: block;
+          display: none;
+          // top: 50%;
+        }
+
+        &::after {
+          display: none;
         }
       }
 
-      .sixth_point {
-        bottom: 5.8%;
+      .point_5 {
+        bottom: 3.8%;
         left: 56%;
-        background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+        background: url(../../global-assets/img/levels/level5.png) no-repeat center;
 
         &::before {
-          display: block;
+          display: none;
+          // top: 50%;
+        }
+
+        &::after {
+          display: none;
         }
       }
     }
