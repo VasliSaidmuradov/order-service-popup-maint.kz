@@ -396,6 +396,15 @@ body .bg_opacity {
   width: 100%;
   height: 100%;
 }
+.main .level .indicator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  width: 7rem;
+  height: 7rem;
+  background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+}
 .main .level .level_0 {
   position: relative;
   width: 100%;
@@ -423,57 +432,76 @@ body .bg_opacity {
 }
 .main .level .level_0 .level_0_step_line {
   position: absolute;
-  width: 46%;
+  width: 100%;
   height: 70%;
-  top: 17%;
-  left: 34%;
+  top: 0%;
+  left: 0%;
   background-color: #55a7ff88;
   background: url(../../global-assets/img/level-0/line.svg) no-repeat center;
 }
-.main .level .level_0 .first_point {
+.main .level .level_0 .step_point {
   position: absolute;
-  top: 5.8%;
-  left: 38%;
   width: 10%;
   height: 15%;
-  background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
   background-color: rgba(255, 0, 0, 0.3);
+}
+.main .level .level_0 .step_point::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+  width: 7rem;
+  height: 7rem;
+  background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+}
+.main .level .level_0 .first_point {
+  top: 8%;
+  left: 29%;
+  background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+}
+.main .level .level_0 .first_point::before {
+  display: block;
 }
 .main .level .level_0 .second_point {
-  position: absolute;
   top: 15%;
-  left: 58%;
-  width: 10%;
-  height: 15%;
+  left: 48%;
   background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
-  background-color: rgba(255, 0, 0, 0.3);
+}
+.main .level .level_0 .second_point::before {
+  display: block;
 }
 .main .level .level_0 .third_point {
-  position: absolute;
-  top: 45%;
-  left: 70%;
-  width: 10%;
-  height: 15%;
+  top: 21.5%;
+  left: 69%;
   background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
-  background-color: rgba(255, 0, 0, 0.3);
+}
+.main .level .level_0 .third_point::before {
+  display: block;
 }
 .main .level .level_0 .fourth_point {
-  position: absolute;
-  bottom: 5.8%;
-  left: 58%;
-  width: 10%;
-  height: 15%;
+  top: 54%;
+  left: 77%;
   background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
-  background-color: rgba(255, 0, 0, 0.3);
 }
-.main .level .level_0 .fifst_point {
-  position: absolute;
-  bottom: 5.8%;
-  left: 58%;
-  width: 10%;
-  height: 15%;
+.main .level .level_0 .fourth_point::before {
+  display: block;
+}
+.main .level .level_0 .fifth_point {
+  top: 54%;
+  left: 34%;
   background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
-  background-color: rgba(255, 0, 0, 0.3);
+}
+.main .level .level_0 .fifth_point::before {
+  display: block;
+}
+.main .level .level_0 .sixth_point {
+  bottom: 5.8%;
+  left: 56%;
+  background: url(../../global-assets/img/level-0/level5.png) no-repeat center;
+}
+.main .level .level_0 .sixth_point::before {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
