@@ -453,15 +453,27 @@ body .bg_opacity {
   width: 7.5rem;
   height: 7.5rem;
   background: url(../../global-assets/img/level-0/indicator.png) no-repeat center/cover;
-  animation: example 0.8s linear infinite alternate;
+  animation: indicator 0.8s linear infinite alternate;
 }
-@keyframes example {
+@keyframes indicator {
   0% {
     opacity: 0.4;
   }
   100% {
     opacity: 1;
   }
+}
+@keyframes step {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main .level .level_0 .step_animated {
+  animation: step 0.8s linear infinite alternate;
 }
 .main .level .level_0 .first_point {
   top: 8%;
