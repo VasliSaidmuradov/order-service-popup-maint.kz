@@ -422,6 +422,7 @@ body .bg_opacity {
   width: 22rem;
   height: 34rem;
   background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
+  animation: q_box 1.3s linear;
 }
 .main .level .level_0 .level_0_q_box .form_wrap {
   width: 80%;
@@ -429,7 +430,6 @@ body .bg_opacity {
   padding-top: 10%;
 }
 .main .level .level_0 .level_0_q_box .form_wrap form {
-  display: block;
   width: 100%;
   font-size: 0.7rem;
   font-family: "Evolventa";
@@ -531,7 +531,7 @@ body .bg_opacity {
     opacity: 1;
   }
 }
-@keyframes q_box {
+@keyframes q_box--old {
   0% {
     width: 22rem;
     height: 0;
@@ -541,12 +541,9 @@ body .bg_opacity {
     height: 34rem;
   }
 }
-@keyframes q_box_form {
+@keyframes q_box {
   0% {
-    display: none;
-  }
-  100% {
-    display: block;
+    top: -120%;
   }
 }
 @keyframes robot {
