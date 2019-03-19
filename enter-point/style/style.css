@@ -189,7 +189,7 @@ body .bg_opacity {
   height: 85%;
   top: 8.5%;
   right: 1.1%;
-  background: url(../global-assets/img/header/header_menu.png) no-repeat top/cover;
+  background: url("../global-assets/img/header/header_menu.png") no-repeat top/cover;
 }
 
 .main {
@@ -407,7 +407,7 @@ body .bg_opacity {
   left: 8%;
   width: 7rem;
   height: 7rem;
-  background: url(../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+  background: url("../global-assets/img/level-0/indicator.png") no-repeat center/cover;
 }
 .main .level .level_0 {
   position: relative;
@@ -420,7 +420,7 @@ body .bg_opacity {
   left: 2%;
   width: 22rem;
   height: 34rem;
-  background: url(../global-assets/img/question/q_box.png) no-repeat center/cover;
+  background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
 }
 .main .level .level_0 .level_0_q_box .form_wrap {
   width: 80%;
@@ -458,7 +458,7 @@ body .bg_opacity {
   right: 3%;
   width: 15rem;
   height: 15rem;
-  background: url(../global-assets/img/level-0/compass.svg) no-repeat center/cover, url(../global-assets/img/level-0/compass/compass-0.png) no-repeat center;
+  background: url("../global-assets/img/level-0/compass.svg") no-repeat center/cover, url("../global-assets/img/level-0/compass/compass-0.png") no-repeat center;
 }
 .main .level .level_0 .level_0_compass_box::after {
   content: "";
@@ -479,7 +479,7 @@ body .bg_opacity {
   top: 0%;
   left: 0%;
   background-color: #55a7ff88;
-  background: url(../global-assets/img/level-0/line.svg) no-repeat center;
+  background: url("../global-assets/img/level-0/line.svg") no-repeat center;
 }
 .main .level .level_0 .step_point {
   position: absolute;
@@ -493,7 +493,7 @@ body .bg_opacity {
   left: 4%;
   width: 7.5em;
   height: 7.5rem;
-  background: url(../global-assets/img/levels/level_active.png) no-repeat center;
+  background: url("../global-assets/img/levels/level_active.png") no-repeat center;
 }
 .main .level .level_0 .step_point::after {
   content: "";
@@ -503,7 +503,7 @@ body .bg_opacity {
   left: 0%;
   width: 8rem;
   height: 8rem;
-  background: url(../global-assets/img/level-0/indicator.png) no-repeat center/cover;
+  background: url("../global-assets/img/level-0/indicator.png") no-repeat center/cover;
   animation: indicator 0.8s linear infinite alternate;
 }
 @keyframes indicator {
@@ -537,7 +537,7 @@ body .bg_opacity {
 .main .level .level_0 .point_0 {
   top: 0;
   left: 29%;
-  background: url(../global-assets/img/levels/level0.png) no-repeat center;
+  background: url("../global-assets/img/levels/level0.png") no-repeat center;
   animation: robot 0.3s linear infinite alternate;
 }
 .main .level .level_0 .point_0::before {
@@ -550,7 +550,7 @@ body .bg_opacity {
 .main .level .level_0 .point_1 {
   top: 13%;
   left: 47.5%;
-  background: url(../global-assets/img/levels/level1.png) no-repeat center;
+  background: url("../global-assets/img/levels/level1.png") no-repeat center;
 }
 .main .level .level_0 .point_1::before {
   display: none;
@@ -561,7 +561,7 @@ body .bg_opacity {
 .main .level .level_0 .point_2 {
   top: 19%;
   left: 68.5%;
-  background: url(../global-assets/img/levels/level2.png) no-repeat center;
+  background: url("../global-assets/img/levels/level2.png") no-repeat center;
 }
 .main .level .level_0 .point_2::before {
   display: none;
@@ -572,7 +572,7 @@ body .bg_opacity {
 .main .level .level_0 .point_3 {
   top: 51%;
   left: 77%;
-  background: url(../global-assets/img/levels/level3.png) no-repeat center;
+  background: url("../global-assets/img/levels/level3.png") no-repeat center;
 }
 .main .level .level_0 .point_3::before {
   display: none;
@@ -583,7 +583,7 @@ body .bg_opacity {
 .main .level .level_0 .point_4 {
   top: 49%;
   left: 34.5%;
-  background: url(../global-assets/img/levels/level4.png) no-repeat center;
+  background: url("../global-assets/img/levels/level4.png") no-repeat center;
 }
 .main .level .level_0 .point_4::before {
   display: none;
@@ -594,7 +594,7 @@ body .bg_opacity {
 .main .level .level_0 .point_5 {
   bottom: 3.8%;
   left: 56%;
-  background: url(../global-assets/img/levels/level5.png) no-repeat center;
+  background: url("../global-assets/img/levels/level5.png") no-repeat center;
 }
 .main .level .level_0 .point_5::before {
   display: none;
