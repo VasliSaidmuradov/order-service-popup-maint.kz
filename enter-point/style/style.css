@@ -155,7 +155,7 @@ body .bg_opacity {
   top: 7%;
   left: 2.5%;
   padding: 0 0.5rem;
-  background: #111 url(/enter-point/global-assets/img/header/btn_icon.png) no-repeat center/cover;
+  background: #111 url(../global-assets/img/header/btn_icon.png) no-repeat center/cover;
   font-size: 0.7rem;
 }
 .box .btn_wrap .btn {
