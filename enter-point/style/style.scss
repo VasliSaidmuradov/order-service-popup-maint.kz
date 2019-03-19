@@ -530,18 +530,23 @@ body {
         width: 22rem;
         height: 34rem;
         background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
+        // animation: q_box 1s linear;
 
         .form_wrap {
           width: 80%;
+          // height: 100%;
           margin: 0 auto;
           padding-top: 10%;
+          // animation: q_box_form 1s;
+
 
           form {
+            display: block;
             width: 100%;
             font-size: .7rem;
             font-family: "Evolventa";
             line-height: 2.5;
-
+            // animation: q_box_form 1s;
 
 
             label {
@@ -663,16 +668,28 @@ body {
           }
         }
 
-        @keyframes step-- {
+        @keyframes q_box {
           0% {
-            opacity: .8;
-            transform: scale(.95);
+            width: 22rem;
+            height: 0;
           }
 
           100% {
-            opacity: 1;
-
+            width: 22rem;
+            height: 34rem;
           }
+
+        }
+
+        @keyframes q_box_form {
+          0% {
+            display: none;
+          }
+
+          100% {
+            display: block;
+          }
+
         }
 
         @keyframes robot {
