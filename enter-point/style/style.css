@@ -269,7 +269,7 @@ body .bg_opacity {
   top: 76%;
   left: 47%;
   border-radius: 0.5rem;
-  background-color: rgba(7, 26, 31, 0.7);
+  background: rgba(7, 26, 31, 0.7);
   text-align: center;
 }
 .main .wellcome_box .wellcome_frame .btn_wrap a {
@@ -396,6 +396,7 @@ body .bg_opacity {
   width: 61.4%;
 }
 .main .level {
+  display: none;
   position: relative;
   width: 100%;
   height: 100%;

@@ -24,8 +24,8 @@
       <h2>Пройдите Квест</h2>
       <p>по созданию идеального брендбука для Вашей компании!</p>
     </div>
-    <div id="btnStart" class="order-service__button">
-      <a class='animatedClick' data-target='clickExample' href="#">Начать Квест</a>
+    <div id="btnOpenModal" class="order-service__button">
+      <a href="#">Начать Квест</a>
     </div>
     <div class="order-service__line order-service__line_bottom"></div>
   </div>
@@ -52,7 +52,7 @@
     <main class="box main">
 
       <!-- Wellcome box -->
-      <div class="wellcome_box">
+      <div id="wellcomeBox" class="wellcome_box">
         <div class="wellcome_img">
           <img src="/enter-point/global-assets/img/client-lamp.svg" alt="Man">
         </div>
@@ -64,14 +64,14 @@
           <img class="bg" src="/enter-point/global-assets/img/wellcome-window/bg-wellcome.svg" alt="Background">
           <img src="/enter-point/global-assets/img/2.png" alt="2">
           <div class="btn_wrap">
-            <a href="#">Начать</a>
+            <a id="btnStartGame" class="animatedClick" data-target="clickExample" href="#">Начать</a>
           </div>
         </div>
         <!-- <div class="wellcome_frame wellcome_frame_inner"></div> -->
       </div>
 
       <!-- Congratulate box -->
-      <div class="congratulate_box">
+      <div id="congratulateBox" class="congratulate_box">
         <img class="bg" src="/enter-point/global-assets/img/congratulate-window/bg-congratulate.svg" alt="Background">
         <img src="/enter-point/global-assets/img/1.png" alt="1">
         <div class="congratulate_text">
@@ -93,7 +93,7 @@
         </div>
       </div>
 
-      <div class="level level_box">
+      <div id="levelBox" class="level level_box">
         <div class="level_0 animatedParent animateOnce">
           <div class="level_0_q_box animated fadeInDown clickExample delay-500">
             <div class="form_wrap">
