@@ -93,7 +93,37 @@
 
       <div class="level level_box">
         <div class="level_0">
-          <div class="level_0_q_box"></div>
+          <div class="level_0_q_box">
+            <div class="form_wrap">
+              <form>
+                <!-- <fieldset> -->
+                <legend>К какой сфере деятельности относится
+                  Ваш бизнес?</legend>
+
+                <input type="radio" name="activity" id="1" value="medicine" checked> <label for="1">Медицина,
+                  косметология, салоны красоты</label> <br>
+                <input type="radio" name="activity" id="2" value="it"> <label for="2">IT-сфера</label><br>
+                <input type="radio" name="activity" id="3" value="logistic"> <label for="3">Логистика и транспортные
+                  услуги</label><br>
+                <input type="radio" name="activity" id="4" value="resto"> <label for="4">Ресторанный и гостиничный
+                  бизнес</label><br>
+                <input type="radio" name="activity" id="5" value="scince"> <label for="5">Наука, образование,
+                  воспитание</label><br>
+                <input type="radio" name="activity" id="6" value="design"> <label for="6">Маркетинг, дизайн, реклама,
+                  СМИ</label><br>
+                <input type="radio" name="activity" id="7" value="building"> <label for="7">Производство, строительство</label><br>
+                <input type="radio" name="activity" id="8" value="service"> <label for="8">Сфера услуг и быта</label><br>
+                <input type="radio" name="activity" id="9" value="finance"> <label for="9">Экономика, финансы, банки</label><br>
+                <input type="radio" name="activity" id="10" value="tourism"> <label for="10">Недвижимость, туризм,
+                  страхование</label><br>
+                <input type="radio" name="activity" id="11" value="cosmetics"> <label for="11">Косметика, парфюмерия</label><br>
+                <input type="radio" name="activity" id="12" value="other"> <label for="12">Другое</label><br>
+                <textarea name="message"></textarea>
+                <!-- </fieldset> -->
+              </form>
+
+            </div>
+          </div>
           <div class="level_0_compass_box">
             <!-- <img src="/enter-point/global-assets/img/level-0/compass/compass-0.png" alt="Compass points"> -->
             <!-- <img src="/enter-point/global-assets/img/level-0/pointer1.png" alt=""> -->
@@ -120,42 +150,6 @@
 
   <!-- Script -->
   <script src="js/main.js"></script>
-
-  <!-- <script>
-    // Get the modal
-    var modal = document.getElementById("modal");
-    var bg_opacity = document.getElementById("bgOpacity");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("btnStart");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function () {
-      modal.style.display = "block";
-      bg_opacity.style.display = "block";
-
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-      bg_opacity.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-      if (event.target == bg_opacity) {
-        bg_opacity.style.display = "none";
-      }
-    }
-  </script> -->
-
 </body>
 
 </html>
