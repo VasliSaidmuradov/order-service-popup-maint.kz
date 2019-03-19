@@ -150,23 +150,22 @@ body .bg_opacity {
 }
 .box .btn_wrap {
   position: absolute;
-  width: 4%;
-  height: 25%;
+  width: 5%;
+  height: 27%;
   top: 7%;
-  left: 2.2%;
-  padding: 0 10px;
-  background-color: #111;
+  left: 2.5%;
+  padding: 0 0.5rem;
+  background: #111 url(/enter-point/global-assets/img/header/btn_icon.png) no-repeat center/cover;
   font-size: 0.7rem;
-  border-radius: 0.2rem;
-  border: 0.5px solid rgba(85, 167, 255, 0.8);
 }
 .box .btn_wrap .btn {
   width: 100%;
   height: 100%;
   display: inline-block;
   background-color: rgba(221, 221, 221, 0);
-  padding-top: 15%;
-  text-align: center;
+  padding-top: 17%;
+  text-align: right;
+  font-size: 0.58rem;
 }
 
 .header {
