@@ -15,6 +15,7 @@
     var btnStartModal = document.getElementById("btnOpenModal");
     // Get the button that starts game (step 1)
     var btnStartGame = document.getElementById("btnStartGame");
+    var btnNextLevel0 = document.getElementById("btnNextLevel0");
 
     // Get the button that closes the modal
     var btnClose = document.getElementsByClassName("close")[0];
@@ -33,7 +34,7 @@
       // document.getElementById("levelBox").style.display = "block";
       levelBox.style.display = "block";
       loaderWindow.style.display = "block";
-
+      document.getElementById("qBoxLevel0").style.display = "block";
       setTimeout(function () {
         loaderWindow.style.animation = "loader 2s linear forwards";
         // loaderWindow.style.filter = "blur(5px)"
@@ -43,13 +44,23 @@
       }, 7200);
     }
 
-    // When the user clicks on close button on top, close the modal
+    btnNextLevel0.onclick = function () {
+      congratulateBox.style.display = "block";
+      document.getElementById("qBoxLevel0").style.display = "none";
+    }
+
+
+
+
+    // When the user clicks on CLOSE button on top, close the modal
     btnClose.onclick = function () {
       modal.style.display = "none";
       bgOpacity.style.display = "none";
       wellcomeBox.style.display = "none";
       levelBox.style.display = "none";
       loaderWindow.style.animation = "none";
+      congratulateBox.style.display = "none";
+      document.getElementById("qBoxLevel0").style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
