@@ -490,7 +490,7 @@ body .bg_opacity {
   width: 22rem;
   height: 34rem;
   background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
-  animation: q_box 1.3s linear 3s forwards;
+  animation: q_box 1.3s linear 5s forwards;
 }
 .main .level .level_0 .level_0_q_box .form_wrap {
   width: 80%;
@@ -599,14 +599,12 @@ body .bg_opacity {
     opacity: 1;
   }
 }
-@keyframes q_box--old {
+@keyframes loader {
   0% {
-    width: 22rem;
-    height: 0;
+    opicity: 1;
   }
   100% {
-    width: 22rem;
-    height: 34rem;
+    opacity: 0;
   }
 }
 @keyframes q_box {

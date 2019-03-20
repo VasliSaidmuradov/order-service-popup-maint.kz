@@ -35,8 +35,11 @@
       loaderWindow.style.display = "block";
 
       setTimeout(function () {
+        loaderWindow.style.animation = "loader 2s linear forwards";
+      }, 5000);
+      setTimeout(function () {
         loaderWindow.style.display = "none";
-      }, 3000);
+      }, 7000);
     }
 
     // When the user clicks on close button on top, close the modal
@@ -45,6 +48,7 @@
       bgOpacity.style.display = "none";
       wellcomeBox.style.display = "none";
       levelBox.style.display = "none";
+      loaderWindow.style.animation = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it

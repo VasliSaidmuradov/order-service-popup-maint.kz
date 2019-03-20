@@ -634,7 +634,7 @@ body {
         width: 22rem;
         height: 34rem;
         background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
-        animation: q_box 1.3s linear 3s forwards;
+        animation: q_box 1.3s linear 5s forwards;
         // animation-fill-mode: forwards;
 
         .form_wrap {
@@ -769,15 +769,13 @@ body {
           }
         }
 
-        @keyframes q_box--old {
+        @keyframes loader {
           0% {
-            width: 22rem;
-            height: 0;
+            opicity: 1;
           }
 
           100% {
-            width: 22rem;
-            height: 34rem;
+            opacity: 0;
           }
 
         }
