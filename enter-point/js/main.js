@@ -7,6 +7,7 @@
     var wellcomeBox = document.getElementById("wellcomeBox");
     var congratulateBox = document.getElementById("congratulateBox");
     var levelBox = document.getElementById("levelBox");
+    var loaderWindow = document.getElementById("loaderWindow");
 
 
     // GET BUTTONS
@@ -23,20 +24,26 @@
     btnStartModal.onclick = function () {
       modal.style.display = "block";
       bgOpacity.style.display = "block";
-      wellcomeBox.style.display = "block"
+      wellcomeBox.style.display = "block";
     }
     btnStartGame.onclick = function () {
       // modal.style.display = "block";
       // bgOpacity.style.display = "block";
-      wellcomeBox.style.display = "none"
+      wellcomeBox.style.display = "none";
       // document.getElementById("levelBox").style.display = "block";
-      levelBox.style.display = "block"
+      levelBox.style.display = "block";
+      loaderWindow.style.display = "block";
+
+      setTimeout(function () {
+        loaderWindow.style.display = "none";
+      }, 3000);
     }
+
     // When the user clicks on close button on top, close the modal
     btnClose.onclick = function () {
       modal.style.display = "none";
       bgOpacity.style.display = "none";
-      wellcomeBox.style.display = "none"
+      wellcomeBox.style.display = "none";
       levelBox.style.display = "none";
     }
 
