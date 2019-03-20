@@ -490,7 +490,7 @@ body .bg_opacity {
   width: 22rem;
   height: 34rem;
   background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
-  animation: q_box 1.3s linear 5s forwards;
+  animation: q_box 1.3s linear 4s forwards;
 }
 .main .level .level_0 .level_0_q_box .form_wrap {
   width: 80%;
@@ -602,9 +602,11 @@ body .bg_opacity {
 @keyframes loader {
   0% {
     opicity: 1;
+    filter: blur(0px);
   }
   100% {
     opacity: 0;
+    filter: blur(5px);
   }
 }
 @keyframes q_box {

@@ -235,7 +235,6 @@ body {
       }
     }
 
-
     @keyframes lds-loader {
       0% {
         top: 6px;
@@ -634,7 +633,7 @@ body {
         width: 22rem;
         height: 34rem;
         background: url("../global-assets/img/question/q_box.png") no-repeat center/cover;
-        animation: q_box 1.3s linear 5s forwards;
+        animation: q_box 1.3s linear 4s forwards;
         // animation-fill-mode: forwards;
 
         .form_wrap {
@@ -772,10 +771,12 @@ body {
         @keyframes loader {
           0% {
             opicity: 1;
+            filter: blur(0px);
           }
 
           100% {
             opacity: 0;
+            filter: blur(5px);
           }
 
         }

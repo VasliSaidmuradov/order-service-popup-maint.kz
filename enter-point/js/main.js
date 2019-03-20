@@ -36,10 +36,11 @@
 
       setTimeout(function () {
         loaderWindow.style.animation = "loader 2s linear forwards";
+        // loaderWindow.style.filter = "blur(5px)"
       }, 5000);
       setTimeout(function () {
         loaderWindow.style.display = "none";
-      }, 7000);
+      }, 7200);
     }
 
     // When the user clicks on close button on top, close the modal
