@@ -48,6 +48,18 @@ body {
     overflow: hidden;
     z-index: 10;
   }
+
+  //Must be bg of congratulation window
+  #bgBlur1,
+  #bgBlur2 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 20;
+  }
 }
 
 .order-service {
@@ -149,10 +161,11 @@ body {
   display: none;
   width: 1302px;
   height: 651px;
+  z-index: 20;
 
   position: fixed;
   /* Stay in place */
-  z-index: 12;
+  // z-index: 12;
   /* Sit on top */
   /* Location of the box */
   left: 50%;
@@ -247,10 +260,6 @@ body {
         height: 26px;
       }
     }
-
-
-
-
   }
 }
 
@@ -267,6 +276,7 @@ body {
     padding: 0 .5rem;
     background: #111 url("../global-assets/img/header/btn_icon.png") no-repeat center/cover;
     font-size: .7rem;
+    z-index: 21;
     // border-radius: .2rem;
     // background-image: linear-gradient(0deg, #55a7ff1a 0%, #55a7ff1a 100%);
     // border: .5px solid rgba(85, 167, 255, 0.8);

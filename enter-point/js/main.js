@@ -2,6 +2,8 @@
     // Get the modal
     var modal = document.getElementById("modal");
     var bgOpacity = document.getElementById("bgOpacity");
+    var bgBlur1 = document.getElementById("bgBlur1");
+    var bgBlur2 = document.getElementById("bgBlur2");
 
     //Wellcome box
     var wellcomeBox = document.getElementById("wellcomeBox");
@@ -47,6 +49,11 @@
     btnNextLevel0.onclick = function () {
       congratulateBox.style.display = "block";
       document.getElementById("qBoxLevel0").style.display = "none";
+      // modal.style.filter = "blur(2px)";
+      // congratulateBox.style.filter = "none";
+
+      bgBlur1.style.display = "block";
+      bgBlur2.style.display = "block";
     }
 
 
@@ -61,6 +68,8 @@
       loaderWindow.style.animation = "none";
       congratulateBox.style.display = "none";
       document.getElementById("qBoxLevel0").style.display = "none";
+      bgBlur1.style.display = "none";
+      bgBlur2.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
