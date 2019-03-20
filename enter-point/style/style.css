@@ -485,17 +485,17 @@ body .bg_opacity {
 }
 .main .level .level_0 .ldt-power-on {
   -webkit-transform: scale(0.05, 0.05);
-  transform: scale(0.05, 0.05);
+  transform: scale(0, 0);
   -webkit-animation: ldt-power-on 1s forwards 5s;
-  animation: ldt-power-on 1s forwards 5s;
+  animation: ldt-power-on 1s forwards 5.5s;
 }
 @keyframes ldt-power-on {
   0%, 20%, 100% {
-    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
   }
   0% {
-    -webkit-transform: scale(0.05, 0.05);
-    transform: scale(0.05, 0.05);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
   }
   20% {
     -webkit-transform: scale(1, 0.1);
@@ -526,11 +526,16 @@ body .bg_opacity {
 }
 .main .level .level_0 .level_0_q_box .form_wrap form label {
   color: rgba(255, 255, 255, 0.5);
+  top: -10px;
 }
 .main .level .level_0 .level_0_q_box .form_wrap form legend {
   font-size: 0.85rem;
   line-height: 1.3;
   padding: 0.5rem 0 1.2rem;
+}
+.main .level .level_0 .level_0_q_box .form_wrap form input[type=radio]:checked + label {
+  font-weight: bold;
+  color: #fff;
 }
 .main .level .level_0 .level_0_q_box .form_wrap form textarea {
   width: 96%;
