@@ -144,6 +144,74 @@ body .bg_opacity {
   background: url("../global-assets/img/bg-main2.png") no-repeat center/cover;
   font-family: "Evolventa";
 }
+.container .loader_window {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  z-index: 100;
+}
+.container .loader_window .loader_wrap {
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container .loader_window .loader_wrap .loader_text {
+  height: 5rem;
+}
+.container .loader_window .loader_wrap .loader_text p {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  line-height: 5rem;
+}
+.container .loader_window .lds-loader {
+  display: inline-block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+.container .loader_window .lds-loader div {
+  display: inline-block;
+  position: absolute;
+  left: 0.2rem;
+  width: 0.5rem;
+  margin-top: 0.4rem;
+  background: #fff;
+  animation: lds-loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.container .loader_window .lds-loader div:nth-child(1) {
+  left: 0.2rem;
+  animation-delay: -0.24s;
+}
+.container .loader_window .lds-loader div:nth-child(2) {
+  left: 1.1rem;
+  animation-delay: -0.12s;
+}
+.container .loader_window .lds-loader div:nth-child(3) {
+  left: 2.1rem;
+  animation-delay: 0;
+}
+@keyframes lds-loader {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
 
 .box {
   width: 100%;
