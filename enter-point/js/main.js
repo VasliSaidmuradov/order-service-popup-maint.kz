@@ -5,13 +5,13 @@
     var bgBlur1 = document.getElementById("bgBlur1");
     var bgBlur2 = document.getElementById("bgBlur2");
 
-    //Wellcome box
+    //Box
     var wellcomeBox = document.getElementById("wellcomeBox");
     var congratulateBox = document.getElementById("congratulateBox");
     var levelBox = document.getElementById("levelBox");
     var loaderWindow = document.getElementById("loaderWindow");
     var qBoxLevel0 = document.getElementById("qBoxLevel0");
-
+    var stepBox = document.getElementById("stepBox");
 
     // GET BUTTONS
     // Get the button that opens the modal
@@ -73,6 +73,8 @@
     var form1To2 = document.getElementById("form1To2");
     var btnNextLevel1 = document.getElementById("btnNextLevel1");
     var btnNextCong = document.getElementById("btnNextCong");
+    var compassBox = document.getElementById("compassBox");
+
     // To Level 1 form Congratulate box
     btnNextCong.onclick = function () {
       congratulateBox.style.display = "none";
@@ -93,10 +95,12 @@
       point1.classList.remove("step_point_after", "step_animated");
       point1.classList.add("step_point_before");
       point2.classList.add("step_point_after", "step_animated");
-
+      // compass box
+      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-1.png) no-repeat center";
+      stepBox.style.background = "url(global-assets/img/header/header-menu1.png) no-repeat top/cover";
     }
 
-    // When the user clicks on CLOSE button on top, close the modal
+    // When the user clicks on CLOSE button on top, CLOSE the modal
     btnClose.onclick = function () {
       modal.style.display = "none";
       bgOpacity.style.display = "none";
@@ -121,6 +125,8 @@
       point1.classList.add("step_point_after", "step_animated");
       point1.classList.remove("step_point_before");
       point2.classList.remove("step_point_after", "step_animated");
+      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-0.png) no-repeat center";
+      stepBox.style.background = "url(global-assets/img/header/header-menu.png) no-repeat top/cover";
     }
 
     // When the user clicks anywhere outside of the modal, close it
