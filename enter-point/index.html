@@ -97,7 +97,7 @@
           <p>Он поможет пройти к следующему вопросу.</p>
         </div>
         <div class="btn_wrap">
-          <a href="#">Продолжить</a>
+          <a id="btnNextCong" href="#">Продолжить</a>
         </div>
         <div class="svg_wrap">
           <img class="ellipse1" src="global-assets/img/congratulate-window/ellipse1.svg" alt="Ellipse">
@@ -113,7 +113,7 @@
         <div class="level_0 animatedParent">
           <div id="qBoxLevel0" class="level_0_q_box ld ldt-power-on">
             <div class="form_wrap">
-              <form>
+              <form id="form0To1">
                 <!-- <fieldset> -->
                 <legend>К какой сфере деятельности относится
                   Ваш бизнес?</legend>
@@ -143,27 +143,37 @@
                 <textarea name="message"></textarea>
                 <!-- </fieldset> -->
               </form>
+
+              <form id="form1To2">
+                <legend>Какие задачи должен решить брендбук?</legend>
+                <input type="radio" name="task" id="13" value="information"> <label for="13">Представить информацию о
+                  компании</label> <br>
+                <input type="radio" name="task" id="14" value="persona"> <label for="14">Сформировать имидж
+                  бренда</label><br>
+                <input type="radio" name="task" id="15" value="ideology"> <label for="15">Донести до пользователей
+                  информацию об идеологии бренда, его преимуществах и достоинствах</label><br>
+              </form>
             </div>
-            <div id="btnNextLevel0" class="q_btn">
-              <a href="#">Далее</a>
+            <div class="q_btn">
+              <a id="btnNextLevel0" href="#">Далее</a>
             </div>
           </div>
-          <div class="level_0_compass_box">
+          <div id="compassBox" class="compass_box">
             <!-- <img src="/enter-point/global-assets/img/level-0/compass/compass-0.png" alt="Compass points"> -->
             <!-- <img src="/enter-point/global-assets/img/level-0/pointer1.png" alt=""> -->
           </div>
           <!-- <div class="level_0_step_line"></div> -->
-          <div class="step_point point_0"></div>
+          <div id="point0" class="step_point point_0 step_point_before"></div>
           <div class="line_0to5 line_0to1"></div>
           <div class="line_0to5 line_1to2"></div>
           <div class="line_0to5 line_2to3"></div>
           <div class="line_0to5 line_3to4"></div>
           <div class="line_0to5 line_4to5"></div>
-          <div class="step_point point_1 step_animated"></div>
-          <div class="step_point point_2"></div>
-          <div class="step_point point_3"></div>
-          <div class="step_point point_4"></div>
-          <div class="step_point point_5"></div>
+          <div id="point1" class="step_point point_1 step_animated step_point_after"></div>
+          <div id="point2" class="step_point point_2"></div>
+          <div id="point3" class="step_point point_3"></div>
+          <div id="point4" class="step_point point_4"></div>
+          <div id="point5" class="step_point point_5"></div>
         </div>
       </div>
     </main>

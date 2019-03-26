@@ -10,6 +10,7 @@
     var congratulateBox = document.getElementById("congratulateBox");
     var levelBox = document.getElementById("levelBox");
     var loaderWindow = document.getElementById("loaderWindow");
+    var qBoxLevel0 = document.getElementById("qBoxLevel0");
 
 
     // GET BUTTONS
@@ -57,7 +58,43 @@
     }
 
 
+    // LEVEL POINTS
 
+    var point0 = document.getElementById("point0");
+    var point1 = document.getElementById("point1");
+    var point2 = document.getElementById("point2");
+    var point3 = document.getElementById("point3");
+    var point4 = document.getElementById("point4");
+    var point5 = document.getElementById("point5");
+
+
+    // LEVEL 1
+    var form0To1 = document.getElementById("form0To1");
+    var form1To2 = document.getElementById("form1To2");
+    var btnNextLevel1 = document.getElementById("btnNextLevel1");
+    var btnNextCong = document.getElementById("btnNextCong");
+    // To Level 1 form Congratulate box
+    btnNextCong.onclick = function () {
+      congratulateBox.style.display = "none";
+      btnNextCong.id = "btnNextCongTo2";
+      qBoxLevel0.style.display = "block";
+      qBoxLevel0.style.animation = "ldt-power-on 1s forwards .5s";
+      form0To1.style.display = "none";
+      form1To2.style.display = "block";
+      bgBlur1.style.display = "none";
+      bgBlur2.style.display = "none";
+      point0.style.animation = "none";
+      point0.style.background = "url(global-assets/img/levels/level0_cursor.png) no-repeat bottom";
+      point0.style.top = "1.5%";
+      point0.classList.remove("step_point_before");
+      point1.style.animation = "robot 0.3s linear infinite alternate";
+      point1.style.background = "url(global-assets/img/levels/level1_man.png) no-repeat center";
+      point1.style.top = "6%";
+      point1.classList.remove("step_point_after", "step_animated");
+      point1.classList.add("step_point_before");
+      point2.classList.add("step_point_after", "step_animated");
+
+    }
 
     // When the user clicks on CLOSE button on top, close the modal
     btnClose.onclick = function () {
@@ -70,6 +107,20 @@
       document.getElementById("qBoxLevel0").style.display = "none";
       bgBlur1.style.display = "none";
       bgBlur2.style.display = "none";
+
+      qBoxLevel0.style.animation = "ldt-power-on 1s forwards 5.5s";
+      form0To1.style.display = "block";
+      form1To2.style.display = "none";
+      point0.style.background = "url(global-assets/img/levels/level0.png) no-repeat center";
+      point0.style.top = "0%";
+      point0.classList.add("step_point_before");
+      point0.style.animation = "robot 0.3s linear infinite alternate";
+      point1.style.background = "url(global-assets/img/levels/level1.png) no-repeat center";
+      point1.style.top = "13%";
+      point1.style.animation = "none";
+      point1.classList.add("step_point_after", "step_animated");
+      point1.classList.remove("step_point_before");
+      point2.classList.remove("step_point_after", "step_animated");
     }
 
     // When the user clicks anywhere outside of the modal, close it

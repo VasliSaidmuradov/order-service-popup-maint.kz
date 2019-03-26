@@ -719,6 +719,14 @@ body {
               resize: none;
             }
           }
+
+          #form0To1 {
+            // display: none;
+          }
+
+          #form1To2 {
+            display: none;
+          }
         }
 
         .q_btn {
@@ -734,12 +742,13 @@ body {
           a {
             display: inline-block;
             text-transform: uppercase;
-            margin-top: .8rem;
+            margin-top: .5rem;
+            padding: 3% 25%;
           }
         }
       }
 
-      .level_0_compass_box {
+      .compass_box {
         position: absolute;
         top: 2.5%;
         right: 3%;
@@ -777,30 +786,6 @@ body {
         position: absolute;
         width: 10%;
         height: 20%;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 30%;
-          // transform: translateY(-50%);
-          left: 4%;
-          width: 7.5em;
-          height: 7.5rem;
-          background: url("../global-assets/img/levels/level_active.png") no-repeat center;
-          // animation: indicator .8s linear infinite alternate;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 0%;
-          width: 8rem;
-          height: 8rem;
-          background: url("../global-assets/img/level-0/indicator.png") no-repeat center/cover;
-          animation: indicator .8s linear infinite alternate;
-        }
 
         // Animation indicator
         @keyframes indicator {
@@ -856,6 +841,44 @@ body {
         animation: step .8s linear infinite alternate;
       }
 
+      .step_point_before {
+        position: absolute;
+        width: 10%;
+        height: 20%;
+
+        &::before {
+          content: "";
+          position: absolute;
+          // top: 14%;
+          top: 50%;
+          // transform: translateY(-50%);
+          left: 4%;
+          width: 7.5em;
+          height: 7.5rem;
+          background: url("../global-assets/img/levels/level_active.png") no-repeat center;
+          // animation: indicator .8s linear infinite alternate;
+          z-index: -1;
+        }
+      }
+
+      .step_point_after {
+        position: absolute;
+        width: 10%;
+        height: 20%;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0%;
+          width: 8rem;
+          height: 8rem;
+          background: url("../global-assets/img/level-0/indicator.png") no-repeat center/cover;
+          animation: indicator .8s linear infinite alternate;
+        }
+      }
+
       .point_0 {
         top: 0;
         left: 29%;
@@ -878,14 +901,14 @@ body {
         left: 47.5%;
         background: url("../global-assets/img/levels/level1.png") no-repeat center;
 
-        &::before {
-          display: none;
-          // top: 50%;
-        }
+        // &::before {
+        //   display: none;
+        //   // top: 50%;
+        // }
 
-        &::after {
-          display: block;
-        }
+        // &::after {
+        //   display: block;
+        // }
       }
 
       .point_2 {
@@ -893,14 +916,14 @@ body {
         left: 68.5%;
         background: url("../global-assets/img/levels/level2.png") no-repeat center;
 
-        &::before {
-          display: none;
-          // top: 50%;
-        }
+        // &::before {
+        //   display: none;
+        //   // top: 50%;
+        // }
 
-        &::after {
-          display: none;
-        }
+        // &::after {
+        //   display: none;
+        // }
       }
 
       .point_3 {
@@ -908,14 +931,14 @@ body {
         left: 77%;
         background: url("../global-assets/img/levels/level3.png") no-repeat center;
 
-        &::before {
-          display: none;
-          // top: 50%;
-        }
+        // &::before {
+        //   display: none;
+        //   // top: 50%;
+        // }
 
-        &::after {
-          display: none;
-        }
+        // &::after {
+        //   display: none;
+        // }
       }
 
       .point_4 {
@@ -923,14 +946,14 @@ body {
         left: 34.5%;
         background: url("../global-assets/img/levels/level4.png") no-repeat center;
 
-        &::before {
-          display: none;
-          // top: 50%;
-        }
+        // &::before {
+        //   display: none;
+        //   // top: 50%;
+        // }
 
-        &::after {
-          display: none;
-        }
+        // &::after {
+        //   display: none;
+        // }
       }
 
       .point_5 {
@@ -938,14 +961,14 @@ body {
         left: 56%;
         background: url("../global-assets/img/levels/level5.png") no-repeat center;
 
-        &::before {
-          display: none;
-          // top: 50%;
-        }
+        // &::before {
+        //   display: none;
+        //   // top: 50%;
+        // }
 
-        &::after {
-          display: none;
-        }
+        // &::after {
+        //   display: none;
+        // }
       }
 
       // Lines between steps
