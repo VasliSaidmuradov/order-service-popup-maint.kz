@@ -19,6 +19,7 @@
     // Get the button that starts game (step 1)
     var btnStartGame = document.getElementById("btnStartGame");
     var btnNextLevel0 = document.getElementById("btnNextLevel0");
+    var btnNextLevel1 = document.getElementById("btnNextLevel1");
 
     // Get the button that closes the modal
     var btnClose = document.getElementsByClassName("close")[0];
@@ -47,17 +48,6 @@
       }, 7200);
     }
 
-    btnNextLevel0.onclick = function () {
-      congratulateBox.style.display = "block";
-      document.getElementById("qBoxLevel0").style.display = "none";
-      // modal.style.filter = "blur(2px)";
-      // congratulateBox.style.filter = "none";
-
-      bgBlur1.style.display = "block";
-      bgBlur2.style.display = "block";
-    }
-
-
     // LEVEL POINTS
 
     var point0 = document.getElementById("point0");
@@ -71,14 +61,14 @@
     // LEVEL 1
     var form0To1 = document.getElementById("form0To1");
     var form1To2 = document.getElementById("form1To2");
+    var form2To3 = document.getElementById("form2To3");
     var btnNextLevel1 = document.getElementById("btnNextLevel1");
-    var btnNextCong = document.getElementById("btnNextCong");
+    var btnNextCong = document.getElementById("btnNextCong0");
     var compassBox = document.getElementById("compassBox");
 
     // To Level 1 form Congratulate box
     btnNextCong.onclick = function () {
       congratulateBox.style.display = "none";
-      btnNextCong.id = "btnNextCongTo2";
       qBoxLevel0.style.display = "block";
       qBoxLevel0.style.animation = "ldt-power-on 1s forwards .5s";
       form0To1.style.display = "none";
@@ -98,6 +88,63 @@
       // compass box
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-1.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu1.png) no-repeat top/cover";
+      document.getElementById("btnNextLevel0").style.display = "none";
+      document.getElementById("btnNextLevel1").style.display = "inline-block";
+    }
+    btnNextLevel0.onclick = function () {
+      congratulateBox.style.display = "block";
+      document.getElementById("qBoxLevel0").style.display = "none";
+      // modal.style.filter = "blur(2px)";
+      // congratulateBox.style.filter = "none";
+
+      bgBlur1.style.display = "block";
+      bgBlur2.style.display = "block";
+    }
+    // Click to Next button 1 (pass to Second level)
+    document.getElementById("btnNextLevel1").onclick = function () {
+      congratulateBox.style.display = "block";
+      document.getElementById("quiz1_text").style.opacity = "0";
+      document.getElementById("quiz2_text").style.opacity = "1";
+      document.getElementById("qBoxLevel0").style.display = "none";
+      document.getElementById("btnNextCong0").style.display = "none";
+      document.getElementById("btnNextCong1").style.display = "inline-block";
+      // modal.style.filter = "blur(2px)";
+      // congratulateBox.style.filter = "none";
+
+      bgBlur1.style.display = "block";
+      bgBlur2.style.display = "block";
+    }
+
+    // Click to Congratulete button 2 (pass to Second level)
+    document.getElementById("btnNextCong1").onclick = function () {
+      congratulateBox.style.display = "none";
+      qBoxLevel0.style.display = "block";
+      qBoxLevel0.style.animation = "ldt-power-on 1s forwards .5s";
+      form0To1.style.display = "none";
+      form1To2.style.display = "none";
+      form2To3.style.display = "block";
+      bgBlur1.style.display = "none";
+      bgBlur2.style.display = "none";
+      point0.style.animation = "none";
+      point0.style.background = "url(global-assets/img/levels/level0_cursor.png) no-repeat bottom";
+      point0.style.top = "1.5%";
+      point0.classList.remove("step_point_before");
+      point1.style.animation = "none";
+      point1.style.background = "url(global-assets/img/levels/level1_cursor.png) no-repeat bottom";
+      point1.classList.remove("step_point_before");
+      point2.style.animation = "robot 0.3s linear infinite alternate";
+      point2.style.background = "url(global-assets/img/levels/level1_man.png) no-repeat center";
+      point2.style.top = "6%";
+      point2.classList.remove("step_point_after", "step_animated");
+      point2.classList.add("step_point_before");
+      point3.classList.add("step_point_after", "step_animated");
+      // compass box
+      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-1.png) no-repeat center";
+      stepBox.style.background = "url(global-assets/img/header/header-menu1.png) no-repeat top/cover";
+      //return btnNextCongTo2.id = "btnNextCongTo3";
+
+      document.getElementById("btnNextLevel1").style.display = "none";
+      document.getElementById("btnNextLevel2").style.display = "inline-block";
     }
 
     // When the user clicks on CLOSE button on top, CLOSE the modal
@@ -115,6 +162,7 @@
       qBoxLevel0.style.animation = "ldt-power-on 1s forwards 5.5s";
       form0To1.style.display = "block";
       form1To2.style.display = "none";
+      form2To3.style.display = "none";
       point0.style.background = "url(global-assets/img/levels/level0.png) no-repeat center";
       point0.style.top = "0%";
       point0.classList.add("step_point_before");
@@ -127,6 +175,15 @@
       point2.classList.remove("step_point_after", "step_animated");
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-0.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu.png) no-repeat top/cover";
+
+      document.getElementById("btnNextLevel0").style.display = "inline-block";
+      document.getElementById("btnNextLevel1").style.display = "none";
+      document.getElementById("btnNextLevel2").style.display = "none";
+      document.getElementById("quiz1_text").style.opacity = "1";
+      document.getElementById("quiz2_text").style.opacity = "0";
+      document.getElementById("quiz3_text").style.opacity = "0";
+      document.getElementById("btnNextCong0").style.display = "inline-block";
+      document.getElementById("btnNextCong1").style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it

@@ -1,5 +1,6 @@
 @font-face {
   font-family: Evolventa;
+  font-display: fallback;
   src: local("Evolventa"), url("../global-assets/fonts/evolventa/Evolventa-Regular.woff");
   font-weight: normal;
   font-style: normal;
@@ -7,6 +8,7 @@
 
 @font-face {
   font-family: Evolventa;
+  font-display: fallback;
   src: local("Evolventa Oblique"), url("../global-assets/fonts/evolventa/Evolventa-Oblique.woff");
   font-weight: normal;
   font-style: italic;
@@ -14,6 +16,7 @@
 
 @font-face {
   font-family: Evolventa;
+  font-display: fallback;
   src: local("Evolventa Bold"), url("../global-assets/fonts/evolventa/Evolventa-Bold.woff");
   font-weight: bold;
   font-style: normal;
@@ -21,6 +24,7 @@
 
 @font-face {
   font-family: Evolventa;
+  font-display: fallback;
   src: local("Evolventa Bold Oblique"), url("../global-assets/fonts/evolventa/Evolventa-BoldOblique.woff");
   font-weight: bold;
   font-style: italic;
@@ -32,6 +36,12 @@
   box-sizing: border-box;
   color: #fff;
   text-decoration: none;
+}
+
+html {
+  ul {
+    list-style: none;
+  }
 }
 
 body {
@@ -229,7 +239,6 @@ body {
         margin-top: .4rem;
         background: #fff;
         animation: lds-loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-
       }
 
       & div:nth-child(1) {
@@ -324,7 +333,6 @@ body {
   }
 }
 
-
 // Main
 .main {
   position: relative;
@@ -345,7 +353,6 @@ body {
   //   background-color: rgba(0, 0, 0, 0.4);
   //   color: #fff;
   // }
-
 
   // Wellcome window
   .wellcome_box {
@@ -505,7 +512,7 @@ body {
       }
 
       p {
-        width: 85%;
+        //width: 85%;
         // font-size: 93%;
         font-size: .93rem;
         color: #ffffff;
@@ -525,11 +532,15 @@ body {
       }
     }
 
+    #quiz2_text, 
+    #quiz3_text {
+      opacity: 0;
+    }
+
     .btn_wrap {
       position: absolute;
       width: 50%;
       height: 22%;
-      // bottom: 5%;
       margin-top: 46%;
       left: 40%;
       background-color: rgba(7, 26, 31, 0);
@@ -678,6 +689,7 @@ body {
         // animation-fill-mode: forwards;
 
         .form_wrap {
+          // position: relative;
           width: 80%;
           // height: 100%;
           margin: 0 auto;
@@ -718,13 +730,41 @@ body {
               box-shadow: inset 0 0 .3rem .5rem rgba(0, 0, 0, 0.1);
               resize: none;
             }
+
+            ul {
+              li {
+                position: relative;
+
+                .checkmark {
+                  position: absolute;
+                  top: .35rem;
+                  left: 0;
+                  height: .9rem;
+                  width: .9rem;
+                  box-shadow: 0 0 .2rem rgba(255, 255, 255, .5);
+                  border-radius: 50%;
+                }
+
+                .cont-label {
+                  display: block;
+                  padding-left: 1.5rem;
+                  user-select: none;
+
+                  input {
+                    position: absolute;
+                    opacity: 0;
+                  }
+                }
+              }
+            }
           }
 
-          #form0To1 {
-            // display: none;
-          }
+          //#form0To1 {
+          // display: none;
+          //}
 
-          #form1To2 {
+          #form1To2,
+          #form2To3 {
             display: none;
           }
         }

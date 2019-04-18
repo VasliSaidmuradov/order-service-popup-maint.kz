@@ -90,15 +90,30 @@
       <div id="congratulateBox" class="congratulate_box">
         <img class="bg" src="global-assets/img/congratulate-window/bg-congratulate.svg" alt="Background">
         <img src="global-assets/img/1.png" alt="1">
-        <div class="congratulate_text">
+        <div id="quiz1_text" class="congratulate_text">
           <h1>Поздравляем!</h1>
           <p>Ваша первая награда</p>
           <p><span>Заряд энергии</span></p>
           <p>Он поможет пройти к следующему вопросу.</p>
         </div>
-        <div class="btn_wrap">
-          <a id="btnNextCong" href="#">Продолжить</a>
+        <div id="quiz2_text" class="congratulate_text">
+          <h1>Здорово!</h1>
+          <p>Вы получили</p>
+          <p><span>Энергию Солнца и медаль «За Честность»</span></p>
+          <p>Продолжайте в том же духе!</p>
         </div>
+        <div id="quiz3_text" class="congratulate_text">
+          <h1>Превосходно, Вы почти дошли до цели!</h1>
+          <p>Получите</p>
+          <p><span>кубок Храбреца</span></p>
+          <p>и наполнитесь Энергией Цвета.</p>
+        </div>
+        <div class="btn_wrap">
+          <a id="btnNextCong0" href="#">Продолжить</a>
+          <a id="btnNextCong1" href="#" style = "display: none">Продолжить</a>
+          <a id="btnNextCong2" href="#" style = "display: none">Продолжить</a>
+        </div>
+        
         <div class="svg_wrap">
           <img class="ellipse1" src="global-assets/img/congratulate-window/ellipse1.svg" alt="Ellipse">
           <img class="ellipse2" src="global-assets/img/congratulate-window/ellipse2.svg" alt="Ellipse">
@@ -117,8 +132,83 @@
                 <!-- <fieldset> -->
                 <legend>К какой сфере деятельности относится
                   Ваш бизнес?</legend>
-
-                <input type="radio" name="activity" id="1" value="medicine"> <label for="1">Медицина,
+                <ul>
+                  <li>
+                    <label class="cont-label">Медицина, косметология, салоны красоты
+                      <input type="radio" name="radio" value="Медицина, косметология, салоны красоты">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">IT-сфера
+                      <input type="radio" name="radio" value="IT-сфера">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Логистика и транспортные услуги
+                      <input type="radio" name="radio" value="Логистика и транспортные услуги">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Ресторанный и гостиничный бизнес
+                      <input type="radio" name="radio" value="Ресторанный и гостиничный бизнес">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Наука, образование, воспитание
+                      <input type="radio" name="radio" value="Наука, образование, воспитание">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Маркетинг, дизайн, реклама, СМИ
+                      <input type="radio" name="radio" value="Маркетинг, дизайн, реклама, СМИ">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Производство, строительство
+                      <input type="radio" name="radio" value="Производство, строительство">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Сфера услуг и быта
+                      <input type="radio" name="radio" value="Сфера услуг и быта">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Экономика, финансы, банки
+                      <input type="radio" name="radio" value="Экономика, финансы, банки">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Недвижимость, туризм, страхование
+                      <input type="radio" name="radio" value="Недвижимость, туризм, страхование">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Косметика, парфюмерия
+                      <input type="radio" name="radio" value="Косметика, парфюмерия">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Другое
+                      <input type="radio" name="radio" value="Другое">
+                      <textarea name="message"></textarea>
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+                
+                <!-- <input type="radio" name="activity" id="1" value="medicine"> <label for="1">Медицина,
                   косметология, салоны красоты</label> <br>
                 <input type="radio" name="activity" id="2" value="it"> <label for="2">IT-сфера</label><br>
                 <input type="radio" name="activity" id="3" value="logistic"> <label for="3">Логистика и транспортные
@@ -138,24 +228,107 @@
                 <input type="radio" name="activity" id="10" value="tourism"> <label for="10">Недвижимость, туризм,
                   страхование</label><br>
                 <input type="radio" name="activity" id="11" value="cosmetics"> <label for="11">Косметика,
-                  парфюмерия</label><br>
-                <input type="radio" name="activity" id="12" value="other"> <label for="12">Другое</label><br>
-                <textarea name="message"></textarea>
+                  парфюмерия</label><br> -->
+
+                  <!-- <input type="radio" name="activity" id="12" value="other"> <label for="12">Другое</label><br>
+                <textarea name="message"></textarea> -->
+                
                 <!-- </fieldset> -->
               </form>
 
               <form id="form1To2">
                 <legend>Какие задачи должен решить брендбук?</legend>
-                <input type="radio" name="task" id="13" value="information"> <label for="13">Представить информацию о
+                <ul>
+                  <li>
+                    <label class="cont-label">Представить информацию о компании
+                      <input type="radio" name="radio" value="Представить информацию о компании">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Сформировать имидж бренда
+                      <input type="radio" name="radio" value="Сформировать имидж бренда">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Донести до пользователей информацию об идеологии бренда, его преимуществах и достоинствах
+                      <input type="radio" name="radio" value="Донести до пользователей информацию об идеологии бренда, его преимуществах и достоинствах">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+                <!-- <input type="radio" name="task" id="13" value="information"> <label for="13">Представить информацию о
                   компании</label> <br>
                 <input type="radio" name="task" id="14" value="persona"> <label for="14">Сформировать имидж
                   бренда</label><br>
                 <input type="radio" name="task" id="15" value="ideology"> <label for="15">Донести до пользователей
-                  информацию об идеологии бренда, его преимуществах и достоинствах</label><br>
+                  информацию об идеологии бренда, его преимуществах и достоинствах</label><br> -->
+              </form>
+              <form id="form2To3">
+                <legend>Укажите основные элементы брендбука:</legend>
+                <ul>
+                  <li>
+                    <label class="cont-label">О компании/История
+                      <input type="radio" name="radio" value="О компании/История">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Преимущества/Достижения
+                      <input type="radio" name="radio" value="Преимущества/Достижения">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Миссия
+                      <input type="radio" name="radio" value="Миссия">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Ценности
+                      <input type="radio" name="radio" value="Ценности">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Идеология
+                      <input type="radio" name="radio" value="Идеология">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Архетип бренда
+                      <input type="radio" name="radio" value="Архетип бренда">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Характер бренда
+                      <input type="radio" name="radio" value="Характер бренда">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">4D-модель бренда
+                      <input type="radio" name="radio" value="4D-модель бренда">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="cont-label">Позиционирование бренда
+                      <input type="radio" name="radio" value="Позиционирование бренда">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
               </form>
             </div>
             <div class="q_btn">
               <a id="btnNextLevel0" href="#">Далее</a>
+              <a id="btnNextLevel1" href="#" style = "display: none">Далее</a>
+              <a id="btnNextLevel2" href="#" style = "display: none">Далее</a>
             </div>
           </div>
           <div id="compassBox" class="compass_box">
