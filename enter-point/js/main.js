@@ -130,17 +130,19 @@
       point0.style.top = "1.5%";
       point0.classList.remove("step_point_before");
       point1.style.animation = "none";
-      point1.style.background = "url(global-assets/img/levels/level1_cursor.png) no-repeat bottom";
+      point1.style.background = "url(global-assets/img/levels/level0_cursor.png) no-repeat bottom";
+      point1.style.top = "8%";
       point1.classList.remove("step_point_before");
       point2.style.animation = "robot 0.3s linear infinite alternate";
-      point2.style.background = "url(global-assets/img/levels/level1_man.png) no-repeat center";
-      point2.style.top = "6%";
+      point2.style.background = "url(global-assets/img/levels/level2_man.png) no-repeat center";
+      point2.style.top = "2%";
+      point2.style.height = "30%";
       point2.classList.remove("step_point_after", "step_animated");
-      point2.classList.add("step_point_before");
+      point2.classList.add("point_2_before");
       point3.classList.add("step_point_after", "step_animated");
       // compass box
-      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-1.png) no-repeat center";
-      stepBox.style.background = "url(global-assets/img/header/header-menu1.png) no-repeat top/cover";
+      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-2.png) no-repeat center";
+      stepBox.style.background = "url(global-assets/img/header/header-menu2.png) no-repeat top/cover";
       //return btnNextCongTo2.id = "btnNextCongTo3";
 
       document.getElementById("btnNextLevel1").style.display = "none";
@@ -173,6 +175,11 @@
       point1.classList.add("step_point_after", "step_animated");
       point1.classList.remove("step_point_before");
       point2.classList.remove("step_point_after", "step_animated");
+      point2.classList.remove("point_2_before");
+      point2.style.background = "url(global-assets/img/levels/level2.png) no-repeat center";
+      point2.style.top = "19%";
+      point2.style.height = "20%";
+      point3.classList.remove("step_point_after", "step_animated");
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-0.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu.png) no-repeat top/cover";
 

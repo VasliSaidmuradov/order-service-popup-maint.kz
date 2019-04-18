@@ -739,6 +739,16 @@ body #bgBlur2 {
   left: 68.5%;
   background: url("../global-assets/img/levels/level2.png") no-repeat center;
 }
+.main .level .level_0 .point_2_before::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 7.5em;
+  height: 7.5rem;
+  background: url("../global-assets/img/levels/level_active.png") no-repeat center;
+  z-index: -1;
+}
 .main .level .level_0 .point_3 {
   top: 51%;
   left: 77%;
