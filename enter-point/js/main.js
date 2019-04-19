@@ -116,7 +116,7 @@
       bgBlur2.style.display = "block";
     }
 
-    // Click to Congratulete button 2 (pass to Second level)
+    // Click to Congratulete button 1 (pass to Second level)
     document.getElementById("btnNextCong1").onclick = function () {
       congratulateBox.style.display = "none";
       qBoxLevel0.style.display = "block";
@@ -166,7 +166,7 @@
       bgBlur1.style.display = "block";
       bgBlur2.style.display = "block";
     }
-    // Click to Congratulete button 3 (pass to Third level)
+    // Click to Congratulete button 2 (pass to Third level)
     document.getElementById("btnNextCong2").onclick = function () {
       congratulateBox.style.display = "none";
       qBoxLevel0.style.display = "block";
@@ -228,6 +228,137 @@
       bgBlur2.style.display = "block";
     }
 
+    // Click to Congratulete button 3 (pass to Fourth level)
+    document.getElementById("btnNextCong3").onclick = function () {
+      congratulateBox.style.display = "none";
+      qBoxLevel0.style.display = "block";
+      qBoxLevel0.style.animation = "ldt-power-on 1s forwards .5s";
+      form0To1.style.display = "none";
+      form1To2.style.display = "none";
+      form2To3.style.display = "none";
+      form3To4.style.display = "none";
+      form4To5.style.display = "block";
+      bgBlur1.style.display = "none";
+      bgBlur2.style.display = "none";
+      point0.style.animation = "none";
+      point0.style.background = "url(global-assets/img/levels/level0_cursor.png) no-repeat bottom";
+      point0.style.top = "1.5%";
+      point0.classList.remove("step_point_before");
+      point1.style.animation = "none";
+      point1.style.background = "url(global-assets/img/levels/level1_cursor.png) no-repeat bottom";
+      point1.style.top = "11%";
+      point1.classList.remove("step_point_before");
+      point2.style.animation = "none";
+      point2.style.background = "url(global-assets/img/levels/level2_cursor.png) no-repeat center";
+      point2.style.top = "21%";
+      point2.style.height = "20%";
+      point2.classList.remove("step_point_after", "step_animated");
+      point2.classList.remove("point_2_before");
+      point3.style.animation = "none";
+      point3.style.background = "url(global-assets/img/levels/level3_cursor.png) no-repeat center";
+      point3.style.top = "53%";
+      point3.style.height = "20%";
+      point3.classList.remove("step_point_before");
+      point3.classList.remove("step_point_after", "step_animated");
+      
+      point4.style.animation = "robot 0.3s linear infinite alternate";
+      point4.style.background = "url(global-assets/img/levels/level4_man.png) no-repeat center";
+      point4.style.top = "35%";
+      point4.style.height = "30%";
+      point4.classList.add("point_4_before");
+      point4.classList.remove("step_point_after", "step_animated");
+      point5.classList.add("step_point_after", "step_animated");
+      // compass box
+      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-4.png) no-repeat center";
+      stepBox.style.background = "url(global-assets/img/header/header-menu4.png) no-repeat top/cover";
+      //return btnNextCongTo2.id = "btnNextCongTo3";
+
+      document.getElementById("btnNextLevel1").style.display = "none";
+      document.getElementById("btnNextLevel2").style.display = "none";
+      document.getElementById("btnNextLevel3").style.display = "none";
+      document.getElementById("btnNextLevel4").style.display = "inline-block";
+    }
+    // Click to Next button 3 (pass to Fourth level)
+    document.getElementById("btnNextLevel4").onclick = function () {
+      congratulateBox.style.display = "block";
+      document.getElementById("quiz1_text").style.opacity = "0";
+      document.getElementById("quiz2_text").style.opacity = "0";
+      document.getElementById("quiz3_text").style.opacity = "0";
+      document.getElementById("quiz4_text").style.opacity = "0";
+      document.getElementById("quiz5_text").style.opacity = "1";
+      document.getElementById("qBoxLevel0").style.display = "none";
+      document.getElementById("btnNextCong0").style.display = "none";
+      document.getElementById("btnNextCong1").style.display = "none";
+      document.getElementById("btnNextCong2").style.display = "none";
+      document.getElementById("btnNextCong3").style.display = "none";
+      document.getElementById("btnNextCong4").style.display = "inline-block";
+      //document.getElementById("btnNextCong3")
+      // modal.style.filter = "blur(2px)";
+      // congratulateBox.style.filter = "none";
+
+      bgBlur1.style.display = "block";
+      bgBlur2.style.display = "block";
+    }
+
+    // Click to Congratulete button 4 (pass to Fifth level)
+    document.getElementById("btnNextCong4").onclick = function () {
+      congratulateBox.style.display = "none";
+      qBoxLevel0.style.display = "none";
+      qBoxLevel0.style.animation = "ldt-power-on 1s forwards .5s";
+      form0To1.style.display = "none";
+      form1To2.style.display = "none";
+      form2To3.style.display = "none";
+      form3To4.style.display = "none";
+      form4To5.style.display = "none";
+      bgBlur1.style.display = "none";
+      bgBlur2.style.display = "none";
+      point0.style.animation = "none";
+      point0.style.background = "url(global-assets/img/levels/level0_cursor.png) no-repeat bottom";
+      point0.style.top = "1.5%";
+      point0.classList.remove("step_point_before");
+      point1.style.animation = "none";
+      point1.style.background = "url(global-assets/img/levels/level1_cursor.png) no-repeat bottom";
+      point1.style.top = "11%";
+      point1.classList.remove("step_point_before");
+      point2.style.animation = "none";
+      point2.style.background = "url(global-assets/img/levels/level2_cursor.png) no-repeat center";
+      point2.style.top = "21%";
+      point2.style.height = "20%";
+      point2.classList.remove("step_point_after", "step_animated");
+      point2.classList.remove("point_2_before");
+      
+      point3.style.animation = "none";
+      point3.style.background = "url(global-assets/img/levels/level3_cursor.png) no-repeat center";
+      point3.style.top = "53%";
+      point3.style.height = "20%";
+      point3.classList.remove("step_point_before");
+      point3.classList.remove("step_point_after", "step_animated");
+      
+      point4.style.animation = "none";
+      point4.style.background = "url(global-assets/img/levels/level4_cursor.png) no-repeat center";
+      point4.style.top = "51%";
+      point4.style.height = "20%";
+      point4.classList.remove("point_4_before");
+      point4.classList.remove("step_point_after", "step_animated");
+
+      point5.style.animation = "robot 0.3s linear infinite alternate";
+      point5.style.background = "url(global-assets/img/levels/level5_man.png) no-repeat center";
+      point5.style.top = "61%";
+      point5.style.height = "30%";
+      point5.classList.add("point_5_before");
+      point5.classList.remove("step_point_after", "step_animated");
+      
+      // compass box
+      compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-5.png) no-repeat center";
+      stepBox.style.background = "url(global-assets/img/header/header-menu5.png) no-repeat top/cover";
+      //return btnNextCongTo2.id = "btnNextCongTo3";
+
+      document.getElementById("btnNextLevel1").style.display = "none";
+      document.getElementById("btnNextLevel2").style.display = "none";
+      document.getElementById("btnNextLevel3").style.display = "none";
+      document.getElementById("btnNextLevel4").style.display = "inline-block";
+    }
+
     // click on CLOSE button on top, CLOSE the modal
     btnClose.onclick = function () {
       modal.style.display = "none";
@@ -245,30 +376,42 @@
       form1To2.style.display = "none";
       form2To3.style.display = "none";
       form3To4.style.display = "none";
-      
+      form4To5.style.display = "none";
       point0.style.background = "url(global-assets/img/levels/level0.png) no-repeat center";
       point0.style.top = "0%";
       point0.classList.add("step_point_before");
       point0.style.animation = "robot 0.3s linear infinite alternate";
-      
+
       point1.style.background = "url(global-assets/img/levels/level1.png) no-repeat center";
       point1.style.top = "13%";
       point1.style.animation = "none";
       point1.classList.add("step_point_after", "step_animated");
       point1.classList.remove("step_point_before");
-      
+
       point2.classList.remove("step_point_after", "step_animated");
       point2.classList.remove("point_2_before");
       point2.style.background = "url(global-assets/img/levels/level2.png) no-repeat center";
       point2.style.top = "19%";
       point2.style.height = "20%";
-      
+
       point3.classList.remove("step_point_after", "step_animated");
       point3.classList.remove("step_point_before");
       point3.style.background = "url(global-assets/img/levels/level3.png) no-repeat center";
       point3.style.top = "51%";
       point3.style.height = "20%";
-      
+
+      point4.classList.remove("step_point_after", "step_animated");
+      point4.classList.remove("point_4_before");
+      point4.style.background = "url(global-assets/img/levels/level4.png) no-repeat center";
+      point4.style.top = "49%";
+      point4.style.height = "20%";
+
+      point5.classList.remove("step_point_after", "step_animated");
+      point5.classList.remove("point_5_before");
+      point5.style.background = "url(global-assets/img/levels/level5.png) no-repeat center";
+      point5.style.top = "77%";
+      point5.style.height = "20%";
+
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-0.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu.png) no-repeat top/cover";
 
@@ -276,16 +419,19 @@
       document.getElementById("btnNextLevel1").style.display = "none";
       document.getElementById("btnNextLevel2").style.display = "none";
       document.getElementById("btnNextLevel3").style.display = "none";
+      document.getElementById("btnNextLevel4").style.display = "none";
 
       document.getElementById("quiz1_text").style.opacity = "1";
       document.getElementById("quiz2_text").style.opacity = "0";
       document.getElementById("quiz3_text").style.opacity = "0";
       document.getElementById("quiz4_text").style.opacity = "0";
+      document.getElementById("quiz5_text").style.opacity = "0";
 
       document.getElementById("btnNextCong0").style.display = "inline-block";
       document.getElementById("btnNextCong1").style.display = "none";
       document.getElementById("btnNextCong2").style.display = "none";
       document.getElementById("btnNextCong3").style.display = "none";
+      document.getElementById("btnNextCong4").style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it

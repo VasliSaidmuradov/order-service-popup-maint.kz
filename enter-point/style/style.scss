@@ -534,10 +534,11 @@ body {
 
     #quiz2_text,
     #quiz3_text,
-    #quiz4_text {
+    #quiz4_text,
+    #quiz5_text {
       opacity: 0;
     }
-    #quiz4_text {
+    #quiz4_text{
       width: 50%;
     }
 
@@ -763,13 +764,10 @@ body {
             }
           }
 
-          //#form0To1 {
-          // display: none;
-          //}
-
           #form1To2,
           #form2To3,
-          #form3To4 {
+          #form3To4,
+          #form4To5 {
             display: none;
           }
         }
@@ -995,30 +993,38 @@ body {
         top: 49%;
         left: 34.5%;
         background: url("../global-assets/img/levels/level4.png") no-repeat center;
-
-        // &::before {
-        //   display: none;
-        //   // top: 50%;
-        // }
-
-        // &::after {
-        //   display: none;
-        // }
+      }
+      .point_4_before {
+        
+        &::before {
+          content: "";
+          position: absolute;
+          top: 60%;
+          left: 4.5%;
+          width: 7.5em;
+          height: 7.5rem;
+          background: url("../global-assets/img/levels/level_active.png") no-repeat center;
+          z-index: -1;
+        }
       }
 
       .point_5 {
         bottom: 3.8%;
         left: 56%;
         background: url("../global-assets/img/levels/level5.png") no-repeat center;
-
-        // &::before {
-        //   display: none;
-        //   // top: 50%;
-        // }
-
-        // &::after {
-        //   display: none;
-        // }
+      }
+      .point_5_before {
+        
+        &::before {
+          content: "";
+          position: absolute;
+          top: 60%;
+          left: 2%;
+          width: 7.5em;
+          height: 7.5rem;
+          background: url("../global-assets/img/levels/level_active.png") no-repeat center;
+          z-index: -1;
+        }
       }
 
       // Lines between steps

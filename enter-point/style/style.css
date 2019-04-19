@@ -416,7 +416,8 @@ body #bgBlur2 {
 }
 .main .congratulate_box #quiz2_text,
 .main .congratulate_box #quiz3_text,
-.main .congratulate_box #quiz4_text {
+.main .congratulate_box #quiz4_text,
+.main .congratulate_box #quiz5_text {
   opacity: 0;
 }
 .main .congratulate_box #quiz4_text {
@@ -596,7 +597,8 @@ body #bgBlur2 {
 }
 .main .level .level_0 .level_0_q_box .form_wrap #form1To2,
 .main .level .level_0 .level_0_q_box .form_wrap #form2To3,
-.main .level .level_0 .level_0_q_box .form_wrap #form3To4 {
+.main .level .level_0 .level_0_q_box .form_wrap #form3To4,
+.main .level .level_0 .level_0_q_box .form_wrap #form4To5 {
   display: none;
 }
 .main .level .level_0 .level_0_q_box .q_btn {
@@ -760,10 +762,30 @@ body #bgBlur2 {
   left: 34.5%;
   background: url("../global-assets/img/levels/level4.png") no-repeat center;
 }
+.main .level .level_0 .point_4_before::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 4.5%;
+  width: 7.5em;
+  height: 7.5rem;
+  background: url("../global-assets/img/levels/level_active.png") no-repeat center;
+  z-index: -1;
+}
 .main .level .level_0 .point_5 {
   bottom: 3.8%;
   left: 56%;
   background: url("../global-assets/img/levels/level5.png") no-repeat center;
+}
+.main .level .level_0 .point_5_before::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 2%;
+  width: 7.5em;
+  height: 7.5rem;
+  background: url("../global-assets/img/levels/level_active.png") no-repeat center;
+  z-index: -1;
 }
 .main .level .level_0 .line_0to5 {
   position: absolute;
