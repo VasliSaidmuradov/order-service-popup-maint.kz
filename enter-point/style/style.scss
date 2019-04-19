@@ -533,8 +533,12 @@ body {
     }
 
     #quiz2_text,
-    #quiz3_text {
+    #quiz3_text,
+    #quiz4_text {
       opacity: 0;
+    }
+    #quiz4_text {
+      width: 50%;
     }
 
     .btn_wrap {
@@ -764,7 +768,8 @@ body {
           //}
 
           #form1To2,
-          #form2To3 {
+          #form2To3,
+          #form3To4 {
             display: none;
           }
         }
