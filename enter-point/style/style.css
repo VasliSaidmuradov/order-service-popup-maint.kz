@@ -615,7 +615,10 @@ body #bgBlur2 {
   display: inline-block;
   text-transform: uppercase;
   margin-top: 0.5rem;
-  padding: 3% 25%;
+  padding: 4% 25%;
+}
+.main .level .level_0 .level_0_q_box .q_btn #btnNextLevel3 {
+  padding: 4% 15%;
 }
 .main .level .level_0 .compass_box {
   position: absolute;
