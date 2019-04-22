@@ -723,11 +723,22 @@ body {
               font-weight: bold;
               color: #fff;
             }
+            input[type="text"] {
+              width: 96%;
+              height: 2rem;
+              margin: 0 0 5%;
+              padding: 0 1%;
+              box-sizing: border-box;
+              font-size: .7rem;
+              background-color: #88888800;
+              border: 1px solid rgba(136, 136, 136, 0.3);
+              box-shadow: inset 0 0 .3rem .5rem rgba(0, 0, 0, 0.1);
+            }
 
             textarea {
               width: 96%;
               height: 3rem;
-              margin: 3% 0 0 2%;
+              margin: 1% 0 0 2%;
               box-sizing: border-box;
               font-size: .8rem;
               background-color: #88888800;
@@ -735,33 +746,67 @@ body {
               box-shadow: inset 0 0 .3rem .5rem rgba(0, 0, 0, 0.1);
               resize: none;
             }
-
+            
             ul {
               li {
                 position: relative;
-
-                .checkmark {
-                  position: absolute;
-                  top: .35rem;
-                  left: 0;
-                  height: .9rem;
-                  width: .9rem;
-                  box-shadow: 0 0 .2rem rgba(255, 255, 255, .5);
-                  border-radius: 50%;
-                }
 
                 .cont-label {
                   display: block;
                   padding-left: 1.5rem;
                   user-select: none;
+                  cursor: pointer;
 
                   input {
                     position: absolute;
                     opacity: 0;
+
+                    &:checked~.checkmark:after {
+                      display: block;
+                    }
+                  }
+
+                  .checkmark {
+                    position: absolute;
+                    top: .35rem;
+                    left: 0;
+                    height: .9rem;
+                    width: .9rem;
+                    box-shadow: 0 0 .2rem rgba(255, 255, 255, .5);
+                    border-radius: 50%;
+
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      display: none;
+                      top: 50%;
+                      left: 50%;
+                      width: 85%;
+                      height: 85%;
+                      border-radius: 50%;
+                      background: #00b5ff;
+                      box-shadow: inset 0 10px 10px rgba(0,0,0,.5);
+                      transform: translate(-50%,-50%);
+                    }
                   }
                 }
               }
             }
+            .check-radio {
+              position: absolute;
+              top: 90%;
+              left: 50%;
+              width: 90%;
+              text-align: center;
+              border-top: 0px solid #00b5ff;
+              transform: translate(-50%,-50%);
+
+              p {
+                margin-top: .5rem;
+                color: #00b5ff;
+                line-height: 1.2;
+              }
+          }
           }
 
           #form1To2,

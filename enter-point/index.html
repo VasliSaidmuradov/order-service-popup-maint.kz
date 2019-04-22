@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style/style.css">
   <!-- <link rel="stylesheet" href="style/animations.css"> -->
   <!-- <link rel="stylesheet" href="style/transition.css"> -->
-  <script async src="js/jquery-3.3.1.min.js"></script>
   <title>Order service popup component | maint.kz</title>
 </head>
 
@@ -221,7 +220,7 @@
                     <textarea name="message"></textarea>
                   </li>
                 </ul>
-                
+                <div class="check-radio"></div>
                 <!-- <input type="radio" name="activity" id="1" value="medicine"> <label for="1">Медицина,
                   косметология, салоны красоты</label> <br>
                 <input type="radio" name="activity" id="2" value="it"> <label for="2">IT-сфера</label><br>
@@ -272,6 +271,7 @@
                     </label>
                   </li>
                 </ul>
+                <div class="check-radio"></div>
                 <!-- <input type="radio" name="task" id="13" value="information"> <label for="13">Представить информацию о
                   компании</label> <br>
                 <input type="radio" name="task" id="14" value="persona"> <label for="14">Сформировать имидж
@@ -282,64 +282,70 @@
               <form id="form2To3">
                 <legend>Укажите основные элементы брендбука:</legend>
                 <ul>
-                  <li>
+                  <li class="check_input radio1" data-id="1">
                     <label class="cont-label">О компании/История
-                      <input type="radio" name="radio" value="О компании/История">
+                      <input type="radio" value="О компании/История">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio2" data-id="2">
                     <label class="cont-label">Преимущества/Достижения
-                      <input type="radio" name="radio" value="Преимущества/Достижения">
+                      <input type="radio" value="Преимущества/Достижения">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio3" data-id="3">
                     <label class="cont-label">Миссия
-                      <input type="radio" name="radio" value="Миссия">
+                      <input type="radio" value="Миссия">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio4" data-id="4">
                     <label class="cont-label">Ценности
-                      <input type="radio" name="radio" value="Ценности">
+                      <input type="radio" value="Ценности">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio5" data-id="5">
                     <label class="cont-label">Идеология
-                      <input type="radio" name="radio" value="Идеология">
+                      <input type="radio" value="Идеология">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio6" data-id="6">
                     <label class="cont-label">Архетип бренда
-                      <input type="radio" name="radio" value="Архетип бренда">
+                      <input type="radio" value="Архетип бренда">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio7" data-id="7">
                     <label class="cont-label">Характер бренда
-                      <input type="radio" name="radio" value="Характер бренда">
+                      <input type="radio" value="Характер бренда">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio8" data-id="8">
                     <label class="cont-label">4D-модель бренда
-                      <input type="radio" name="radio" value="4D-модель бренда">
+                      <input type="radio" value="4D-модель бренда">
                       <span class="checkmark"></span>
                     </label>
                   </li>
-                  <li>
+                  <li class="check_input radio9" data-id="9">
                     <label class="cont-label">Позиционирование бренда
-                      <input type="radio" name="radio" value="Позиционирование бренда">
+                      <input type="radio" value="Позиционирование бренда">
                       <span class="checkmark"></span>
                     </label>
                   </li>
                 </ul>
+                <div class="check-radio"></div>
               </form>
               <form id="form3To4">
                 <legend>Оставьте свои контакты и выберите награду за прохождение Квеста:</legend>
+                <div class="questions"> <!-- ? -->
+                  <input type="text" placeholder="Ваш телефон" class="game-phone">
+                  <input type="hidden" class="game_keyword" name="keyword"
+                  value="<?php echo isset($_GET['utm_term'])? $_GET['utm_term']:'нету ключа'?>">
+                </div>
                 <ul>
                   <li>
                     <label class="cont-label">Анализ уникальности и соответствия маркетинговым требованиям существующего брендбука.
@@ -355,6 +361,7 @@
                     <p>Детальное знание портрета потребителя повлияет на рост Ваших продаж</p>
                   </li>
                 </ul>
+                <div class="check-radio"></div>
               </form>
               <form id="form4To5">
                 <p>Вы блестяще справились с Квестом! Мы рады видеть Вас в качестве клиента и перезвоним в течении рабочего дня, чтобы обговорить детали проекта.</p>
@@ -388,14 +395,20 @@
       </div>
     </main>
   </div>
-
   <!-- Must be bg of congratulation window -->
   <!-- <div id="bgBlur" class="bg_blur"></div> -->
-
-
   <!-- Script -->
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/css3-animate-it.js"></script>
+  <script src="js/quiz.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/mask.js"></script>
+  <script>
+    $(document).ready(function () {
+        $(".game-phone").inputmask("+7 (999) 999 99 99");
+    })
+  </script>
+
 </body>
 
 </html>

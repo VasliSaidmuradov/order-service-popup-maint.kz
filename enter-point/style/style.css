@@ -563,10 +563,21 @@ body #bgBlur2 {
   font-weight: bold;
   color: #fff;
 }
+.main .level .level_0 .level_0_q_box .form_wrap form input[type=text] {
+  width: 96%;
+  height: 2rem;
+  margin: 0 0 5%;
+  padding: 0 1%;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  background-color: #88888800;
+  border: 1px solid rgba(136, 136, 136, 0.3);
+  box-shadow: inset 0 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
 .main .level .level_0 .level_0_q_box .form_wrap form textarea {
   width: 96%;
   height: 3rem;
-  margin: 3% 0 0 2%;
+  margin: 1% 0 0 2%;
   box-sizing: border-box;
   font-size: 0.8rem;
   background-color: #88888800;
@@ -577,7 +588,20 @@ body #bgBlur2 {
 .main .level .level_0 .level_0_q_box .form_wrap form ul li {
   position: relative;
 }
-.main .level .level_0 .level_0_q_box .form_wrap form ul li .checkmark {
+.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label {
+  display: block;
+  padding-left: 1.5rem;
+  user-select: none;
+  cursor: pointer;
+}
+.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label input {
+  position: absolute;
+  opacity: 0;
+}
+.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label .checkmark {
   position: absolute;
   top: 0.35rem;
   left: 0;
@@ -586,14 +610,32 @@ body #bgBlur2 {
   box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
-.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label {
-  display: block;
-  padding-left: 1.5rem;
-  user-select: none;
-}
-.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label input {
+.main .level .level_0 .level_0_q_box .form_wrap form ul li .cont-label .checkmark:after {
+  content: "";
   position: absolute;
-  opacity: 0;
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background: #00b5ff;
+  box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+}
+.main .level .level_0 .level_0_q_box .form_wrap form .check-radio {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 90%;
+  text-align: center;
+  border-top: 0px solid #00b5ff;
+  transform: translate(-50%, -50%);
+}
+.main .level .level_0 .level_0_q_box .form_wrap form .check-radio p {
+  margin-top: 0.5rem;
+  color: #00b5ff;
+  line-height: 1.2;
 }
 .main .level .level_0 .level_0_q_box .form_wrap #form1To2,
 .main .level .level_0 .level_0_q_box .form_wrap #form2To3,
