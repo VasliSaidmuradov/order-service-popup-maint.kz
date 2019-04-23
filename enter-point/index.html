@@ -313,9 +313,9 @@
               <form id="form3To4">
                 <legend>Оставьте свои контакты и выберите награду за прохождение Квеста:</legend>
                 <div class="questions"> <!-- ? -->
-                  <input type="text" placeholder="Ваш телефон" class="game-phone">
-                  <input type="hidden" class="game_keyword" name="keyword"
-                  value="<?php echo isset($_GET['utm_term'])? $_GET['utm_term']:'нету ключа'?>">
+                  <input id="game-phone" type="text" placeholder="Ваш телефон" class="game-phone">
+                  <!-- <input type="hidden" class="game_keyword" name="keyword"
+                  value="<?php echo isset($_GET['utm_term'])? $_GET['utm_term']:'нету ключа'?>"> -->
                 </div>
                 <ul>
                   <li>
@@ -377,7 +377,7 @@
   <script>
     $(document).ready(function () {
         $(".game-phone").inputmask("+7 (999) 999 99 99");
-    })
+    });
   </script>
 
 </body>

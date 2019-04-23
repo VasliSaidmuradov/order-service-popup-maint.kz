@@ -90,6 +90,23 @@ $.fn.btnNextLevel3 = function () {
   bgBlur1.style.display = "block";
   bgBlur2.style.display = "block";
 }
+let valueTrue = false;
+$.fn.gamePhoneInputTrueOrFalse = function() {
+  let gamePhone = document.getElementById("game-phone");
+  let gamePhoneValue = gamePhone.value;
+  console.log(gamePhoneValue);
+  if (gamePhoneValue[17] !== "_") {
+    valueTrue = true;
+  } 
+  else {
+    valueTrue = false;
+    // console.log(valueTrue);
+  }
+}
+// $.fn.gamePhoneInputTrueOrFalse();
+console.log(valueTrue);
+
+// console.log(gamePhoneInputTrueOrFalse());
 
 if (
   $("body").on("click", "#btnNextLevel0", function () {
@@ -107,11 +124,12 @@ if (
   }),
 
   $("body").on("click", "#btnNextLevel3", function () {
-    if ("" == $(".game-phone").val())
+    $.fn.gamePhoneInputTrueOrFalse();
+    console.log(valueTrue);
+    if ("" == $(".game-phone").val() || valueTrue == false)
       $(".game-phone").css("background", "#D66161");
-    else if ($(".game-phone").inputmask("+7 (999) 999 99 99") == $(".game-phone").val()) {
-      $("#form3To4 .check-radio").empty(), $("#form3To4 .check-radio").append("<p>Пожалуйста, заполните номер телефона корректно!</p>")
-    }
+    // else if (($.fn.gamePhoneInputTrueOrFalse() !== true))
+    //   $(".game-phone").css("background", "#D66161");
     else if ($("#form3To4 input:radio").is(":checked")) {
       ($.fn.btnNextLevel3(), $(".check-radio").empty())
     } else {

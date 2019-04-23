@@ -358,7 +358,7 @@
     }
 
     // click on CLOSE button on top, CLOSE the modal
-    btnClose.onclick = 
+    //btnClose.onclick = 
     
     $.fn.btnClose = function () {
       modal.style.display = "none";
@@ -432,6 +432,7 @@
       document.getElementById("btnNextCong2").style.display = "none";
       document.getElementById("btnNextCong3").style.display = "none";
       document.getElementById("btnNextCong4").style.display = "none";
+      document.getElementById("message").value = "";
     }
 
     // When the user clicks anywhere outside of the modal, close it
