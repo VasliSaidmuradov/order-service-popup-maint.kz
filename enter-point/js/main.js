@@ -92,29 +92,34 @@
       document.getElementById("btnNextLevel0").style.display = "none";
       document.getElementById("btnNextLevel1").style.display = "inline-block";
     }
-    btnNextLevel0.onclick = function () {
-      congratulateBox.style.display = "block";
-      document.getElementById("qBoxLevel0").style.display = "none";
-      // modal.style.filter = "blur(2px)";
-      // congratulateBox.style.filter = "none";
+    // btnNextLevel0.onclick = 
+    // function btnNextlevel0() {
+    //   congratulateBox.style.display = "block";
+    //   document.getElementById("qBoxLevel0").style.display = "none";
+    //   // modal.style.filter = "blur(2px)";
+    //   // congratulateBox.style.filter = "none";
+      
 
-      bgBlur1.style.display = "block";
-      bgBlur2.style.display = "block";
-    }
+    //   bgBlur1.style.display = "block";
+    //   bgBlur2.style.display = "block";
+    // }
     // Click to Next button 1 (pass to Second level)
-    document.getElementById("btnNextLevel1").onclick = function () {
-      congratulateBox.style.display = "block";
-      document.getElementById("quiz1_text").style.opacity = "0";
-      document.getElementById("quiz2_text").style.opacity = "1";
-      document.getElementById("qBoxLevel0").style.display = "none";
-      document.getElementById("btnNextCong0").style.display = "none";
-      document.getElementById("btnNextCong1").style.display = "inline-block";
-      // modal.style.filter = "blur(2px)";
-      // congratulateBox.style.filter = "none";
+    
+    //document.getElementById("btnNextLevel1").onclick = 
+    
+    // $.fn.btnNextLevel1 = function () {
+    //   congratulateBox.style.display = "block";
+    //   document.getElementById("quiz1_text").style.opacity = "0";
+    //   document.getElementById("quiz2_text").style.opacity = "1";
+    //   document.getElementById("qBoxLevel0").style.display = "none";
+    //   document.getElementById("btnNextCong0").style.display = "none";
+    //   document.getElementById("btnNextCong1").style.display = "inline-block";
+    //   // modal.style.filter = "blur(2px)";
+    //   // congratulateBox.style.filter = "none";
 
-      bgBlur1.style.display = "block";
-      bgBlur2.style.display = "block";
-    }
+    //   bgBlur1.style.display = "block";
+    //   bgBlur2.style.display = "block";
+    // }
 
     // Click to Congratulete button 1 (pass to Second level)
     document.getElementById("btnNextCong1").onclick = function () {
@@ -144,28 +149,24 @@
       // compass box
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-2.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu2.png) no-repeat top/cover";
-      //return btnNextCongTo2.id = "btnNextCongTo3";
-
+      
       document.getElementById("btnNextLevel1").style.display = "none";
       document.getElementById("btnNextLevel2").style.display = "inline-block";
     }
     // Click to Next button 2 (pass to Third level)
-    document.getElementById("btnNextLevel2").onclick = function () {
-      congratulateBox.style.display = "block";
-      document.getElementById("quiz1_text").style.opacity = "0";
-      document.getElementById("quiz2_text").style.opacity = "0";
-      document.getElementById("quiz3_text").style.opacity = "1";
-      document.getElementById("qBoxLevel0").style.display = "none";
-      document.getElementById("btnNextCong0").style.display = "none";
-      document.getElementById("btnNextCong1").style.display = "none";
-      document.getElementById("btnNextCong2").style.display = " inline-block";
-      //document.getElementById("btnNextCong3")
-      // modal.style.filter = "blur(2px)";
-      // congratulateBox.style.filter = "none";
-
-      bgBlur1.style.display = "block";
-      bgBlur2.style.display = "block";
-    }
+    //document.getElementById("btnNextLevel2").onclick = 
+    // $.fn.btnNextLevel2 = function () {
+    //   congratulateBox.style.display = "block";
+    //   document.getElementById("quiz1_text").style.opacity = "0";
+    //   document.getElementById("quiz2_text").style.opacity = "0";
+    //   document.getElementById("quiz3_text").style.opacity = "1";
+    //   document.getElementById("qBoxLevel0").style.display = "none";
+    //   document.getElementById("btnNextCong0").style.display = "none";
+    //   document.getElementById("btnNextCong1").style.display = "none";
+    //   document.getElementById("btnNextCong2").style.display = " inline-block";
+    //   bgBlur1.style.display = "block";
+    //   bgBlur2.style.display = "block";
+    // }
     // Click to Congratulete button 2 (pass to Third level)
     document.getElementById("btnNextCong2").onclick = function () {
       congratulateBox.style.display = "none";
@@ -209,24 +210,21 @@
     }
 
     // Click to Next button 3 (pass to Fourth level)
-    document.getElementById("btnNextLevel3").onclick = function () {
-      congratulateBox.style.display = "block";
-      document.getElementById("quiz1_text").style.opacity = "0";
-      document.getElementById("quiz2_text").style.opacity = "0";
-      document.getElementById("quiz3_text").style.opacity = "0";
-      document.getElementById("quiz4_text").style.opacity = "1";
-      document.getElementById("qBoxLevel0").style.display = "none";
-      document.getElementById("btnNextCong0").style.display = "none";
-      document.getElementById("btnNextCong1").style.display = "none";
-      document.getElementById("btnNextCong2").style.display = " none";
-      document.getElementById("btnNextCong3").style.display = " inline-block";
-      //document.getElementById("btnNextCong3")
-      // modal.style.filter = "blur(2px)";
-      // congratulateBox.style.filter = "none";
-
-      bgBlur1.style.display = "block";
-      bgBlur2.style.display = "block";
-    }
+    
+    // $.fn.btnNextLevel3 = function () {
+    //   congratulateBox.style.display = "block";
+    //   document.getElementById("quiz1_text").style.opacity = "0";
+    //   document.getElementById("quiz2_text").style.opacity = "0";
+    //   document.getElementById("quiz3_text").style.opacity = "0";
+    //   document.getElementById("quiz4_text").style.opacity = "1";
+    //   document.getElementById("qBoxLevel0").style.display = "none";
+    //   document.getElementById("btnNextCong0").style.display = "none";
+    //   document.getElementById("btnNextCong1").style.display = "none";
+    //   document.getElementById("btnNextCong2").style.display = " none";
+    //   document.getElementById("btnNextCong3").style.display = " inline-block";
+    //       bgBlur1.style.display = "block";
+    //   bgBlur2.style.display = "block";
+    // }
 
     // Click to Congratulete button 3 (pass to Fourth level)
     document.getElementById("btnNextCong3").onclick = function () {
@@ -360,7 +358,9 @@
     }
 
     // click on CLOSE button on top, CLOSE the modal
-    btnClose.onclick = function () {
+    btnClose.onclick = 
+    
+    $.fn.btnClose = function () {
       modal.style.display = "none";
       bgOpacity.style.display = "none";
       wellcomeBox.style.display = "none";
