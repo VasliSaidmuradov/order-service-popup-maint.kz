@@ -157,7 +157,6 @@ $("body").on("click", ".close", function () {
   $.fn.btnClose();
   $(".game-phone").val(""), $(".game-phone").css("background", "transparent");
   $("input:radio").prop("checked", !1), $(".check-radio").empty()
-
 })
 //, $("body").on("click", ".ok-btn", function() {
 //   setTimeout(function() {

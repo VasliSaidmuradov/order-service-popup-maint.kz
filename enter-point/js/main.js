@@ -98,15 +98,15 @@
     //   document.getElementById("qBoxLevel0").style.display = "none";
     //   // modal.style.filter = "blur(2px)";
     //   // congratulateBox.style.filter = "none";
-      
+
 
     //   bgBlur1.style.display = "block";
     //   bgBlur2.style.display = "block";
     // }
     // Click to Next button 1 (pass to Second level)
-    
+
     //document.getElementById("btnNextLevel1").onclick = 
-    
+
     // $.fn.btnNextLevel1 = function () {
     //   congratulateBox.style.display = "block";
     //   document.getElementById("quiz1_text").style.opacity = "0";
@@ -149,7 +149,7 @@
       // compass box
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-2.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu2.png) no-repeat top/cover";
-      
+
       document.getElementById("btnNextLevel1").style.display = "none";
       document.getElementById("btnNextLevel2").style.display = "inline-block";
     }
@@ -210,7 +210,7 @@
     }
 
     // Click to Next button 3 (pass to Fourth level)
-    
+
     // $.fn.btnNextLevel3 = function () {
     //   congratulateBox.style.display = "block";
     //   document.getElementById("quiz1_text").style.opacity = "0";
@@ -258,7 +258,7 @@
       point3.style.height = "20%";
       point3.classList.remove("step_point_before");
       point3.classList.remove("step_point_after", "step_animated");
-      
+
       point4.style.animation = "robot 0.3s linear infinite alternate";
       point4.style.background = "url(global-assets/img/levels/level4_man.png) no-repeat center";
       point4.style.top = "35%";
@@ -324,14 +324,14 @@
       point2.style.height = "20%";
       point2.classList.remove("step_point_after", "step_animated");
       point2.classList.remove("point_2_before");
-      
+
       point3.style.animation = "none";
       point3.style.background = "url(global-assets/img/levels/level3_cursor.png) no-repeat center";
       point3.style.top = "53%";
       point3.style.height = "20%";
       point3.classList.remove("step_point_before");
       point3.classList.remove("step_point_after", "step_animated");
-      
+
       point4.style.animation = "none";
       point4.style.background = "url(global-assets/img/levels/level4_cursor.png) no-repeat center";
       point4.style.top = "51%";
@@ -345,7 +345,7 @@
       point5.style.height = "30%";
       point5.classList.add("point_5_before");
       point5.classList.remove("step_point_after", "step_animated");
-      
+
       // compass box
       compassBox.style.background = "url(global-assets/img/level-0/compass.svg) no-repeat center/cover, url(global-assets/img/level-0/compass/compass-5.png) no-repeat center";
       stepBox.style.background = "url(global-assets/img/header/header-menu5.png) no-repeat top/cover";
@@ -359,7 +359,7 @@
 
     // click on CLOSE button on top, CLOSE the modal
     //btnClose.onclick = 
-    
+
     $.fn.btnClose = function () {
       modal.style.display = "none";
       bgOpacity.style.display = "none";
