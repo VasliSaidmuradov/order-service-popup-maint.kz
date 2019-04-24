@@ -121,12 +121,12 @@
         </div>
         <div class="btn_wrap">
           <a id="btnNextCong0" href="#">Продолжить</a>
-          <a id="btnNextCong1" href="#" style = "display: none">Продолжить</a>
-          <a id="btnNextCong2" href="#" style = "display: none">Продолжить</a>
-          <a id="btnNextCong3" href="#" style = "display: none">Продолжить</a>
-          <a id="btnNextCong4" href="#" style = "display: none">Продолжить</a>
+          <a id="btnNextCong1" href="#" style="display: none">Продолжить</a>
+          <a id="btnNextCong2" href="#" style="display: none">Продолжить</a>
+          <a id="btnNextCong3" href="#" style="display: none">Продолжить</a>
+          <a id="btnNextCong4" href="#" style="display: none">Продолжить</a>
         </div>
-        
+
         <div class="svg_wrap">
           <img class="ellipse1" src="global-assets/img/congratulate-window/ellipse1.svg" alt="Ellipse">
           <img class="ellipse2" src="global-assets/img/congratulate-window/ellipse2.svg" alt="Ellipse">
@@ -218,11 +218,11 @@
                       <textarea disabled id="message" name="radio"></textarea>
                       <span class="checkmark"></span>
                     </label>
-                    
+
                   </li>
                 </ul>
                 <div class="check-radio"></div>
-                
+
                 <!-- </fieldset> -->
               </form>
 
@@ -242,8 +242,10 @@
                     </label>
                   </li>
                   <li>
-                    <label class="cont-label">Донести до пользователей информацию об идеологии бренда, его преимуществах и достоинствах
-                      <input type="radio" name="radio" value="Донести до пользователей информацию об идеологии бренда, его преимуществах и достоинствах">
+                    <label class="cont-label">Донести до пользователей информацию об идеологии бренда, его преимуществах
+                      и достоинствах
+                      <input type="radio" name="radio"
+                        value="Донести до пользователей информацию об идеологии бренда, его преимуществах и достоинствах">
                       <span class="checkmark"></span>
                     </label>
                   </li>
@@ -312,21 +314,25 @@
               </form>
               <form id="form3To4">
                 <legend>Оставьте свои контакты и выберите награду за прохождение Квеста:</legend>
-                <div class="questions"> <!-- ? -->
+                <div class="questions">
+                  <!-- ? -->
                   <input id="game-phone" type="text" placeholder="Ваш телефон" class="game-phone">
                   <!-- <input type="hidden" class="game_keyword" name="keyword"
                   value="<?php echo isset($_GET['utm_term'])? $_GET['utm_term']:'нету ключа'?>"> -->
                 </div>
                 <ul>
                   <li>
-                    <label class="cont-label">Анализ уникальности и соответствия маркетинговым требованиям существующего брендбука.
-                      <input type="radio" name="radio" value="Анализ уникальности и соответствия маркетинговым требованиям существующего брендбука">
+                    <label class="cont-label">Анализ уникальности и соответствия маркетинговым требованиям существующего
+                      брендбука.
+                      <input type="radio" name="radio"
+                        value="Анализ уникальности и соответствия маркетинговым требованиям существующего брендбука">
                       <span class="checkmark"></span>
                     </label>
                   </li>
                   <li>
                     <label class="cont-label">Дополнительная страница в брендбуке с описанием Целевой аудитории.
-                      <input type="radio" name="radio" value="Дополнительная страница в брендбуке с описанием Целевой аудитории">
+                      <input type="radio" name="radio"
+                        value="Дополнительная страница в брендбуке с описанием Целевой аудитории">
                       <span class="checkmark"></span>
                     </label>
                     <p>Детальное знание портрета потребителя повлияет на рост Ваших продаж</p>
@@ -335,15 +341,16 @@
                 <div class="check-radio"></div>
               </form>
               <form id="form4To5">
-                <p>Вы блестяще справились с Квестом! Мы рады видеть Вас в качестве клиента и перезвоним в течении рабочего дня, чтобы обговорить детали проекта.</p>
+                <p>Вы блестяще справились с Квестом! Мы рады видеть Вас в качестве клиента и перезвоним в течении
+                  рабочего дня, чтобы обговорить детали проекта.</p>
               </form>
             </div>
             <div class="q_btn">
               <a id="btnNextLevel0" href="#">Далее</a>
-              <a id="btnNextLevel1" href="#" style = "display: none">Далее</a>
-              <a id="btnNextLevel2" href="#" style = "display: none">Далее</a>
-              <a id="btnNextLevel3" href="#" style = "display: none">Отправить</a>
-              <a id="btnNextLevel4" href="#" style = "display: none">Далее</a>
+              <a id="btnNextLevel1" href="#" style="display: none">Далее</a>
+              <a id="btnNextLevel2" href="#" style="display: none">Далее</a>
+              <a id="btnNextLevel3" href="#" style="display: none">Отправить</a>
+              <a id="btnNextLevel4" href="#" style="display: none">Далее</a>
             </div>
           </div>
           <div id="compassBox" class="compass_box">
@@ -376,7 +383,7 @@
   <script src="js/mask.js"></script>
   <script>
     $(document).ready(function () {
-        $(".game-phone").inputmask("+7 (999) 999 99 99");
+      $(".game-phone").inputmask("+7 (999) 999 99 99");
     });
   </script>
 
